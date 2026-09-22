@@ -2,6 +2,104 @@
    keywords = extra words people might type. URLs are site-root paths; search.js makes them relative. */
 var SEARCH_INDEX = [
   {
+    "title": "Defense and the Endgame",
+    "url": "/strategy/mahjong-defense/",
+    "category": "Strategy",
+    "description": "When to stop chasing your hand, how to read exposures, and which discards are safest late in American Mahjong.",
+    "keywords": [
+      "defense",
+      "defensive",
+      "endgame",
+      "safe discard",
+      "safest discard",
+      "hot tile",
+      "hot tiles",
+      "reading exposures",
+      "strategy",
+      "wall game"
+    ]
+  },
+  {
+    "title": "American Mahjong Tiles Explained",
+    "url": "/learn/american-mahjong-tiles/",
+    "category": "Learn",
+    "description": "Every American Mahjong tile explained: Dots, Bams, Craks, Winds, Dragons and Soap, Flowers and Jokers, and how many of each are in a set.",
+    "keywords": [
+      "tiles",
+      "152 tiles",
+      "how many tiles",
+      "suits",
+      "dots",
+      "bams",
+      "craks",
+      "winds",
+      "dragons",
+      "soap",
+      "flowers",
+      "jokers",
+      "1 bam bird",
+      "set"
+    ]
+  },
+  {
+    "title": "Scoring and Payouts",
+    "url": "/rules/mahjong-scoring-payouts/",
+    "category": "Rules",
+    "description": "Who pays what after a win: discards pay double, self-drawn wins, Jokerless doubles, wall games and dead hands.",
+    "keywords": [
+      "scoring",
+      "score",
+      "payout",
+      "pay",
+      "money",
+      "double",
+      "jokerless",
+      "self-drawn",
+      "self-picked",
+      "wall game",
+      "points",
+      "stakes"
+    ]
+  },
+  {
+    "title": "Mahjong Etiquette",
+    "url": "/rules/mahjong-etiquette/",
+    "category": "Rules",
+    "description": "Table manners for American Mahjong: naming discards, calling tiles on time, table talk, declaring Mahjong and settling disputes.",
+    "keywords": [
+      "etiquette",
+      "manners",
+      "table talk",
+      "discard",
+      "name discard",
+      "calling",
+      "picking ahead",
+      "house rules",
+      "rude",
+      "dispute"
+    ]
+  },
+  {
+    "title": "Teach Mahjong Lessons",
+    "url": "/community/teach-mahjong-lessons/",
+    "category": "Community",
+    "description": "A four-week beginner course plan, class format, how much to charge, where to teach and how to start a Mahjong club.",
+    "keywords": [
+      "teach",
+      "teacher",
+      "lessons",
+      "class",
+      "course",
+      "lesson plan",
+      "instructor",
+      "how much to charge",
+      "pricing",
+      "start a club",
+      "venue",
+      "side hustle"
+    ]
+  },
+  {
     "title": "About MahjongKit",
     "url": "/about/",
     "category": "About",
@@ -239,7 +337,7 @@ var SEARCH_INDEX = [
     "title": "Printable cheat sheet (PDF)",
     "url": "/learn/mahjong-cheat-sheet/",
     "category": "Learn",
-    "description": "Every tile with its name, and what to do at each moment of a hand. Two pages, letter size, free.",
+    "description": "Free printables: the two-page table companion, plus a scoring and payouts card, table manners and house rules sheet, Charleston quick card and a coach's four-week course kit.",
     "keywords": [
       "printable",
       "cheat sheet",
@@ -250,20 +348,16 @@ var SEARCH_INDEX = [
       "reference",
       "print",
       "table companion",
-      "what do i do now"
-    ]
-  },
-  {
-    "title": "Play Flower Match",
-    "url": "/play/",
-    "category": "Play",
-    "description": "A calm, Mahjong-inspired tile-matching break. No timer, free hints.",
-    "keywords": [
-      "play",
-      "game",
-      "flower match",
-      "matching",
-      "break"
+      "what do i do now",
+      "printables",
+      "scoring card",
+      "payout chart",
+      "house rules",
+      "etiquette sheet",
+      "charleston card",
+      "lesson plan",
+      "teaching kit",
+      "coach"
     ]
   },
   {
@@ -276,7 +370,9 @@ var SEARCH_INDEX = [
       "game",
       "play",
       "tile matching",
-      "relax"
+      "relax",
+      "break",
+      "matching"
     ]
   },
   {
@@ -330,7 +426,11 @@ var SEARCH_INDEX = [
       "false mahjong",
       "impossible exposure",
       "concealed hand",
-      "challenge"
+      "challenge",
+      "dead hand challenge",
+      "unwinnable",
+      "call dead",
+      "dead hand rules"
     ]
   },
   {
@@ -420,7 +520,10 @@ var SEARCH_INDEX = [
       "13 tiles",
       "14 tiles",
       "152 tiles",
-      "how many tiles"
+      "how many tiles",
+      "wall diagram",
+      "wall building",
+      "19 stacks"
     ]
   },
   {

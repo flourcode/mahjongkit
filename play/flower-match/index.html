@@ -1,119 +1,124 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+
+<html class="no-js" lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <script>document.documentElement.className = "js";</script>
 <title>Flower Match: A Relaxing Mahjong-Inspired Tile Game | MahjongKit</title>
-<meta name="description" content="Play Flower Match free in your browser: find the one matching pair of flower tiles on each board. No timer, no pressure, free hints. Mahjong-inspired, not Mahjong.">
-<link rel="canonical" href="https://mahjongkit.com/play/flower-match/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="MahjongKit">
-<meta property="og:title" content="Flower Match">
-<meta property="og:description" content="Play Flower Match free in your browser: find the one matching pair of flower tiles on each board. No timer, no pressure, free hints. Mahjong-inspired, not Mahjong.">
-<meta property="og:url" content="https://mahjongkit.com/play/flower-match/">
-<!-- REPLACE WITH FINAL SOCIAL SHARE IMAGE (1200 x 630 px, keep the file name or update every page) -->
-<meta property="og:image" content="https://mahjongkit.com/assets/images/og-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#16121A" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../assets/css/styles.css?v=5">
+<meta content="Play Flower Match free in your browser: find the one matching pair of flower tiles on each board. No timer, no pressure, free hints. Mahjong-inspired, not Mahjong." name="description"/>
+<link href="https://mahjongkit.com/play/flower-match/" rel="canonical"/>
+<link href="../../llms.txt" rel="describedby" type="text/plain"/>
+<meta content="website" property="og:type"/>
+<meta content="MahjongKit" property="og:site_name"/>
+<meta content="Flower Match" property="og:title"/>
+<meta content="Play Flower Match free in your browser: find the one matching pair of flower tiles on each board. No timer, no pressure, free hints. Mahjong-inspired, not Mahjong." property="og:description"/>
+<meta content="https://mahjongkit.com/play/flower-match/" property="og:url"/>
+<!-- Default social share image (1200 x 630 px) -->
+<meta content="https://mahjongkit.com/assets/images/og-default.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="#FFFFFF" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#16121A" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<link href="../../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link rel="icon" href="../../assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+<link href="../../assets/css/styles.css?v=10" rel="stylesheet"/>
 <!-- GOOGLE CONSENT MANAGEMENT PLATFORM (CMP) CODE GOES HERE IF REQUIRED FOR YOUR AUDIENCE (use Google's CMP or another Google-certified CMP) -->
-<!-- GOOGLE ANALYTICS CODE GOES HERE IF ENABLED -->
+<script src="../../analytics.js"></script>
 <!-- ADSENSE SITE VERIFICATION / AUTO ADS CODE GOES HERE AFTER ACCOUNT SETUP -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mahjongkit.com/"}, {"@type": "ListItem", "position": 2, "name": "Play", "item": "https://mahjongkit.com/play/"}, {"@type": "ListItem", "position": 3, "name": "Flower Match", "item": "https://mahjongkit.com"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mahjongkit.com/"}, {"@type": "ListItem", "position": 2, "name": "Flower Match", "item": "https://mahjongkit.com/play/flower-match/"}]}</script>
 </head>
 <body class="page-game">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="top-app-bar">
-  <div class="container top-app-bar__inner">
-    <a class="logo" href="../../" aria-label="MahjongKit home"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="12" fill="#FFD9E8"/><rect x="11.5" y="7" width="17" height="24" rx="4.5" fill="#FFFFFF"/><rect x="11.5" y="27" width="17" height="5" rx="2.5" fill="#F0A1C2"/><circle cx="20" cy="18.5" r="5.2" fill="none" stroke="#C13B7A" stroke-width="2.6"/><circle cx="20" cy="18.5" r="1.8" fill="#4C6D91"/></svg><span>Mahjong<b>Kit</b></span></a>
-    <nav class="top-nav" aria-label="Main"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../rules/">Rules</a></li><li><a href="../../strategy/">Strategy</a></li><li><a href="../../gear/">Gear</a></li><li><a href="../../community/">Community</a></li><li><a href="../../play/" class="is-active">Play</a></li></ul></nav>
-    <form class="app-search" action="../../search/" method="get" role="search"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg><label class="visually-hidden" for="topbar-q">Search guides</label><input id="topbar-q" name="q" type="search" placeholder="Search guides" autocomplete="off"></form>
-    <a class="icon-btn search-link" href="../../search/" aria-label="Search guides"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></a>
-    <button class="icon-btn menu-btn js-only" type="button" data-open-drawer aria-controls="nav-drawer" aria-expanded="false" aria-label="Open menu"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
-  </div>
+<div class="container top-app-bar__inner">
+<a aria-label="MahjongKit home" class="logo" href="../../"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="7.5" y="6" width="25" height="31.5" rx="6" fill="#EE9BBE"/><rect x="7.8" y="2.8" width="24.4" height="31" rx="5.7" fill="#FFFFFF" stroke="#EEDFE6" stroke-width="0.6"/><g transform="translate(20 18.3) scale(0.172)"><path d="M-10.42 -38.87A11.5 11.5 0 1 1 10.42 -38.87A11.5 11.5 0 1 1 28.46 -28.46A11.5 11.5 0 1 1 38.87 -10.42A11.5 11.5 0 1 1 38.87 10.42A11.5 11.5 0 1 1 28.46 28.46A11.5 11.5 0 1 1 10.42 38.87A11.5 11.5 0 1 1 -10.42 38.87A11.5 11.5 0 1 1 -28.46 28.46A11.5 11.5 0 1 1 -38.87 10.42A11.5 11.5 0 1 1 -38.87 -10.42A11.5 11.5 0 1 1 -28.46 -28.46A11.5 11.5 0 1 1 -10.42 -38.87Z" fill="#F4A7C2"/><circle r="21" fill="#F0672E"/><circle r="8.5" fill="#F4A7C2"/></g></svg><span>Mahjong<b>Kit</b></span></a>
+<nav aria-label="Main" class="top-nav"><ul><li><a href="../../learn/">Learn</a></li><li><a href="../../rules/">Rules</a></li><li><a href="../../strategy/">Strategy</a></li><li><a href="../../gear/">Gear</a></li><li><a href="../../community/">Community</a></li><li><a class="is-active" href="../../play/flower-match/">Play</a></li></ul></nav>
+<form action="../../search/" class="app-search" method="get" role="search"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg><label class="visually-hidden" for="topbar-q">Search guides</label><input autocomplete="off" id="topbar-q" name="q" placeholder="Search guides" type="search"/></form>
+<a aria-label="Search guides" class="icon-btn search-link" href="../../search/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></a>
+<button aria-controls="nav-drawer" aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn js-only" data-open-drawer="" type="button"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></button>
+</div>
 </header>
-<nav class="nav-bar" aria-label="Main"><ul><li><a href="../../"><span class="nav-bar__ind"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span>Home</a></li><li><a href="../../learn/"><span class="nav-bar__ind"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></span>Learn</a></li><li><a href="../../rules/"><span class="nav-bar__ind"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg></span>Rules</a></li><li><a href="../../play/" class="is-active"><span class="nav-bar__ind"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="6.4" r="3.2"/><circle cx="17.4" cy="10.3" r="3.2"/><circle cx="15.4" cy="16.7" r="3.2"/><circle cx="8.6" cy="16.7" r="3.2"/><circle cx="6.6" cy="10.3" r="3.2"/><circle cx="12" cy="12" r="2.4" fill-opacity=".45"/></svg></span>Play</a></li><li><a href="#footer-nav" data-open-drawer aria-controls="nav-drawer" aria-expanded="false"><span class="nav-bar__ind"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span>Menu</a></li></ul></nav>
-<dialog class="drawer" id="nav-drawer" aria-label="Site menu">
-  <div class="drawer__head"><a class="logo" href="../../"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="12" fill="#FFD9E8"/><rect x="11.5" y="7" width="17" height="24" rx="4.5" fill="#FFFFFF"/><rect x="11.5" y="27" width="17" height="5" rx="2.5" fill="#F0A1C2"/><circle cx="20" cy="18.5" r="5.2" fill="none" stroke="#C13B7A" stroke-width="2.6"/><circle cx="20" cy="18.5" r="1.8" fill="#4C6D91"/></svg><span>Mahjong<b>Kit</b></span></a><button class="icon-btn" type="button" data-close-drawer aria-label="Close menu"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button></div>
-  <ul class="drawer__list"><li><a href="../../"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Home</span></a></li><li><a href="../../learn/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></svg><span>Learn</span><small>Start here</small></a></li><li><a href="../../rules/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg><span>Rules</span></a></li><li><a href="../../strategy/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg><span>Strategy</span></a></li><li><a href="../../gear/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg><span>Gear</span></a></li><li><a href="../../community/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg><span>Community</span></a></li><li><a href="../../play/" class="is-active"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="6.4" r="3.2"/><circle cx="17.4" cy="10.3" r="3.2"/><circle cx="15.4" cy="16.7" r="3.2"/><circle cx="8.6" cy="16.7" r="3.2"/><circle cx="6.6" cy="10.3" r="3.2"/><circle cx="12" cy="12" r="2.4" fill-opacity=".45"/></svg><span>Play</span><small>Flower Match</small></a></li></ul>
-  <hr>
-  <p class="drawer__section">More</p>
-  <ul class="drawer__list">
-    <li><a href="../../search/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg><span>Search guides</span></a></li>
-    <li><a href="../../rules/glossary/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg><span>Glossary</span></a></li>
-    <li><a href="../../about/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg><span>About MahjongKit</span></a></li>
-    <li><a href="../../contact/"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><span>Contact</span></a></li>
-  </ul>
+<nav aria-label="Main" class="nav-bar"><ul><li><a href="../../"><span class="nav-bar__ind"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span>Home</a></li><li><a href="../../learn/"><span class="nav-bar__ind"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>Learn</a></li><li><a href="../../rules/"><span class="nav-bar__ind"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></svg></span>Rules</a></li><li><a class="is-active" href="../../play/flower-match/"><span class="nav-bar__ind"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="6.4" r="3.2"></circle><circle cx="17.4" cy="10.3" r="3.2"></circle><circle cx="15.4" cy="16.7" r="3.2"></circle><circle cx="8.6" cy="16.7" r="3.2"></circle><circle cx="6.6" cy="10.3" r="3.2"></circle><circle cx="12" cy="12" fill-opacity=".45" r="2.4"></circle></svg></span>Play</a></li><li><a aria-controls="nav-drawer" aria-expanded="false" data-open-drawer="" href="#footer-nav"><span class="nav-bar__ind"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span>Menu</a></li></ul></nav>
+<dialog aria-label="Site menu" class="drawer" id="nav-drawer">
+<div class="drawer__head"><a class="logo" href="../../"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="7.5" y="6" width="25" height="31.5" rx="6" fill="#EE9BBE"/><rect x="7.8" y="2.8" width="24.4" height="31" rx="5.7" fill="#FFFFFF" stroke="#EEDFE6" stroke-width="0.6"/><g transform="translate(20 18.3) scale(0.172)"><path d="M-10.42 -38.87A11.5 11.5 0 1 1 10.42 -38.87A11.5 11.5 0 1 1 28.46 -28.46A11.5 11.5 0 1 1 38.87 -10.42A11.5 11.5 0 1 1 38.87 10.42A11.5 11.5 0 1 1 28.46 28.46A11.5 11.5 0 1 1 10.42 38.87A11.5 11.5 0 1 1 -10.42 38.87A11.5 11.5 0 1 1 -28.46 28.46A11.5 11.5 0 1 1 -38.87 10.42A11.5 11.5 0 1 1 -38.87 -10.42A11.5 11.5 0 1 1 -28.46 -28.46A11.5 11.5 0 1 1 -10.42 -38.87Z" fill="#F4A7C2"/><circle r="21" fill="#F0672E"/><circle r="8.5" fill="#F4A7C2"/></g></svg><span>Mahjong<b>Kit</b></span></a><button aria-label="Close menu" class="icon-btn" data-close-drawer="" type="button"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></button></div>
+<ul class="drawer__list"><li><a href="../../"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg><span>Home</span></a></li><li><a href="../../learn/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg><span>Learn</span><small>Start here</small></a></li><li><a href="../../rules/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></svg><span>Rules</span></a></li><li><a href="../../strategy/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"></path></svg><span>Strategy</span></a></li><li><a href="../../gear/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg><span>Gear</span></a></li><li><a href="../../community/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg><span>Community</span></a></li><li><a class="is-active" href="../../play/flower-match/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="6.4" r="3.2"></circle><circle cx="17.4" cy="10.3" r="3.2"></circle><circle cx="15.4" cy="16.7" r="3.2"></circle><circle cx="8.6" cy="16.7" r="3.2"></circle><circle cx="6.6" cy="10.3" r="3.2"></circle><circle cx="12" cy="12" fill-opacity=".45" r="2.4"></circle></svg><span>Play</span><small>Flower Match</small></a></li></ul>
+<hr/>
+<p class="drawer__section">More</p>
+<ul class="drawer__list">
+<li><a href="../../search/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg><span>Search guides</span></a></li>
+<li><a href="../../rules/glossary/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"></path></svg><span>Glossary</span></a></li>
+<li><a href="../../about/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg><span>About MahjongKit</span></a></li>
+<li><a href="../../contact/"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg><span>Contact</span></a></li>
+</ul>
 </dialog>
 <main id="main">
-<div class="container"><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="../../">Home</a></li><li><a href="../../play/">Play</a></li><li aria-current="page">Flower Match</li></ol></nav></div>
+<div class="container"><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="../../">Home</a></li><li aria-current="page">Flower Match</li></ol></nav></div>
 <div class="container game-page">
-  <header class="game-head">
-    <h1 class="headline-large">Flower Match</h1>
-    <p class="game-lead">Find the one matching pair.</p>
-    <p class="game-sub">A little Mahjong-inspired pattern game. No timer, no pressure.</p>
-  </header>
-  <section aria-label="Flower Match game">
-    <div class="game-status">
-      <span class="chip chip--pink"><b id="pairs-count">0</b>&nbsp;pairs</span>
-      <span class="chip">No rush</span>
-      <span class="chip chip--tonal" id="size-label">16 tiles</span>
-    </div>
-    <div class="board-wrap"><div class="board" id="board" aria-label="Board of flower tiles"></div></div>
-    <p class="visually-hidden" id="game-live" aria-live="polite"></p>
-    <div class="game-actions">
-      <button class="btn btn--pink" type="button" id="hint-btn"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>Show me a hint</button>
-      <button class="btn btn--outlined" type="button" id="new-board-btn"><svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.65 6.35A7.96 7.96 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>New board</button>
-    </div>
-    <div class="game-size-wrap">
-      <span class="label" id="size-heading">Board size</span>
-      <div class="game-size" role="group" aria-labelledby="size-heading">
-        <button type="button" data-size="9" aria-pressed="false">9 tiles</button>
-        <button type="button" data-size="16" aria-pressed="false">16 tiles</button>
-        <button type="button" data-size="25" aria-pressed="false">25 tiles</button>
-      </div>
-    </div>
-    <p class="game-note">All hints are free. Take your time.</p>
-    <div class="game-done" id="game-done" aria-hidden="true">
-      <h2 class="headline-small">Nice one.</h2>
-      <p id="done-text"></p>
-      <div class="btn-row">
-        <button class="btn btn--filled" type="button" id="again-btn">Play again</button>
-        <a class="btn btn--text" href="../../rules/joker-rules/">Learn one Mahjong rule in 60 seconds</a>
-      </div>
-    </div>
-    <noscript><p class="no-js-note">Flower Match needs JavaScript to deal the tiles. Everything else on MahjongKit works without it.</p></noscript>
-    <p class="game-about">Flower Match uses original decorative tiles inspired by the tactile feel of Mahjong. It isn't traditional Mahjong gameplay. Want the real game? See <a href="../../community/play-american-mahjong-online/">where to play American Mahjong online</a>.</p>
-  </section>
-  <section class="section-block">
-    <h2 class="headline-small">Done playing? Learn one Mahjong rule</h2>
-    <div class="grid grid--3"><a class="card " href="../../rules/joker-rules/"><span class="cat cat--rules">Rules</span><span class="card__title">Joker Rules</span><p class="card__desc">Where Jokers can and can't be used, how a Joker exchange works, and the mistakes that kill hands.</p><span class="card__foot">Read guide <svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span></a><a class="card " href="../../strategy/charleston/"><span class="cat cat--strategy">Strategy</span><span class="card__title">The Charleston</span><p class="card__desc">Right, across, left, then left, across, right. The passing sequence explained, plus the blind pass and what never to give away.</p><span class="card__foot">Read guide <svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span></a><a class="card " href="../../learn/how-to-play-american-mahjong/"><span class="cat cat--learn">Learn</span><span class="card__title">How to Play American Mahjong</span><p class="card__desc">The whole game from the first wash to calling Mahjong, in plain English, with links to every detail.</p><span class="card__foot">Read guide <svg class="md-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span></a></div>
-  </section>
+<header class="game-head">
+<h1 class="headline-large">Flower Match</h1>
+<p class="game-lead">Find the one matching pair.</p>
+<p class="game-sub">A little Mahjong-inspired pattern game. No timer, no pressure.</p>
+</header>
+<section aria-label="Flower Match game">
+<div class="game-status">
+<span class="chip chip--pink"><b id="pairs-count">0</b> pairs</span>
+<span class="chip">No rush</span>
+<span class="chip chip--tonal" id="size-label">16 tiles</span>
+</div>
+<div class="board-wrap"><div aria-label="Board of flower tiles" class="board" id="board"></div></div>
+<p aria-live="polite" class="visually-hidden" id="game-live"></p>
+<div class="game-actions">
+<button class="btn btn--pink" id="hint-btn" type="button"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"></path></svg>Show me a hint</button>
+<button class="btn btn--outlined" id="new-board-btn" type="button"><svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"></path></svg>New board</button>
+</div>
+<div class="game-size-wrap">
+<span class="label" id="size-heading">Board size</span>
+<div aria-labelledby="size-heading" class="game-size" role="group">
+<button aria-pressed="false" data-size="9" type="button">9 tiles</button>
+<button aria-pressed="false" data-size="16" type="button">16 tiles</button>
+<button aria-pressed="false" data-size="25" type="button">25 tiles</button>
+</div>
+</div>
+<p class="game-note">All hints are free. Take your time.</p>
+<div aria-hidden="true" class="game-done" id="game-done">
+<h2 class="headline-small">Nice one.</h2>
+<p id="done-text"></p>
+<div class="btn-row">
+<button class="btn btn--filled" id="again-btn" type="button">Play again</button>
+<a class="btn btn--text" href="../../rules/joker-rules/">Learn one Mahjong rule in 60 seconds</a>
+</div>
+</div>
+<noscript><p class="no-js-note">Flower Match needs JavaScript to deal the tiles. Everything else on MahjongKit works without it.</p></noscript>
+<p class="game-about">Flower Match uses original decorative tiles inspired by the tactile feel of Mahjong. It isn't traditional Mahjong gameplay.</p>
+<a class="card card--blue real-game-card" href="../../community/play-american-mahjong-online/"><span class="cat cat--community">Play online</span><span class="card__title">Ready for real American Mahjong?</span><p class="card__desc">NMJL Online, Real Mah Jongg, I Love Mahj, Mahjong Time and MyJongg all play the actual game, with the card, Jokers and the Charleston. See what each one is good for, with links to play.</p><span class="card__foot">See where to play online <svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></span></a>
+</section>
+<section class="section-block">
+<h2 class="headline-small">Done playing? Learn one Mahjong rule</h2>
+<div class="grid grid--3"><a class="card" href="../../rules/joker-rules/"><span class="cat cat--rules">Rules</span><span class="card__title">Joker Rules</span><p class="card__desc">Where Jokers can and can't be used, how a Joker exchange works, and the mistakes that kill hands.</p><span class="card__foot">Read guide <svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></span></a><a class="card" href="../../strategy/charleston/"><span class="cat cat--strategy">Strategy</span><span class="card__title">The Charleston</span><p class="card__desc">Right, across, left, then left, across, right. The passing sequence explained, plus the blind pass and what never to give away.</p><span class="card__foot">Read guide <svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></span></a><a class="card" href="../../learn/how-to-play-american-mahjong/"><span class="cat cat--learn">Learn</span><span class="card__title">How to Play American Mahjong</span><p class="card__desc">The whole game from the first wash to calling Mahjong, in plain English, with links to every detail.</p><span class="card__foot">Read guide <svg aria-hidden="true" class="md-icon" focusable="false" viewbox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></span></a></div>
+</section>
 </div>
 </main>
 <footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a class="logo" href="../../"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="12" fill="#FFD9E8"/><rect x="11.5" y="7" width="17" height="24" rx="4.5" fill="#FFFFFF"/><rect x="11.5" y="27" width="17" height="5" rx="2.5" fill="#F0A1C2"/><circle cx="20" cy="18.5" r="5.2" fill="none" stroke="#C13B7A" stroke-width="2.6"/><circle cx="20" cy="18.5" r="1.8" fill="#4C6D91"/></svg><span>Mahjong<b>Kit</b></span></a>
-      <p>American Mahjong made easier to understand.</p>
-    </div>
-    <nav class="footer__cols" id="footer-nav" aria-label="Footer">
-      <div><h2>Learn</h2><ul><li><a href="../../learn/how-to-play-american-mahjong/">How to Play</a></li><li><a href="../../rules/glossary/">Mahjong Glossary</a></li><li><a href="../../rules/table-setup/">Table Setup</a></li><li><a href="../../learn/mahjong-cheat-sheet/">Printable Cheat Sheet</a></li></ul></div>
-      <div><h2>Rules</h2><ul><li><a href="../../rules/how-to-read-nmjl-card/">Read the NMJL Card</a></li><li><a href="../../rules/joker-rules/">Joker Rules</a></li><li><a href="../../rules/dead-hand/">Dead Hands</a></li><li><a href="../../rules/chinese-vs-american-mahjong/">Chinese vs. American</a></li></ul></div>
-      <div><h2>Strategy</h2><ul><li><a href="../../strategy/charleston/">Charleston</a></li><li><a href="../../strategy/">Beginner Strategy</a></li><li><a href="../../play/flower-match/">Flower Match</a></li></ul></div>
-      <div><h2>Community</h2><ul><li><a href="../../community/find-local-mahjong/">Find a Game</a></li><li><a href="../../community/host-mahjong-night/">Host a Game Night</a></li><li><a href="../../community/teach-a-beginner/">Teach a Beginner</a></li><li><a href="../../community/play-american-mahjong-online/">Play Online</a></li></ul></div>
-      <div><h2>About</h2><ul><li><a href="../../about/">About</a></li><li><a href="../../editorial-policy/">Editorial Policy</a></li><li><a href="../../contact/">Contact</a></li><li><a href="../../privacy/">Privacy</a></li><li><a href="../../terms/">Terms</a></li><li><a href="../../affiliate-disclosure/">Affiliate Disclosure</a></li></ul></div>
-    </nav>
-  </div>
-  <div class="container footer__legal">
-    <p>MahjongKit is an independent educational website and is not affiliated with or endorsed by the National Mah Jongg League.</p>
-    <p>&copy; 2026 MahjongKit. Original text and illustrations on this site belong to MahjongKit. Other names and marks belong to their respective owners.</p>
-  </div>
+<div class="container footer__inner">
+<div class="footer__brand">
+<a class="logo" href="../../"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="7.5" y="6" width="25" height="31.5" rx="6" fill="#EE9BBE"/><rect x="7.8" y="2.8" width="24.4" height="31" rx="5.7" fill="#FFFFFF" stroke="#EEDFE6" stroke-width="0.6"/><g transform="translate(20 18.3) scale(0.172)"><path d="M-10.42 -38.87A11.5 11.5 0 1 1 10.42 -38.87A11.5 11.5 0 1 1 28.46 -28.46A11.5 11.5 0 1 1 38.87 -10.42A11.5 11.5 0 1 1 38.87 10.42A11.5 11.5 0 1 1 28.46 28.46A11.5 11.5 0 1 1 10.42 38.87A11.5 11.5 0 1 1 -10.42 38.87A11.5 11.5 0 1 1 -28.46 28.46A11.5 11.5 0 1 1 -38.87 10.42A11.5 11.5 0 1 1 -38.87 -10.42A11.5 11.5 0 1 1 -28.46 -28.46A11.5 11.5 0 1 1 -10.42 -38.87Z" fill="#F4A7C2"/><circle r="21" fill="#F0672E"/><circle r="8.5" fill="#F4A7C2"/></g></svg><span>Mahjong<b>Kit</b></span></a>
+<p>American Mahjong made easier to understand.</p>
+</div>
+<nav aria-label="Footer" class="footer__cols" id="footer-nav">
+<div><h2>Learn</h2><ul><li><a href="../../learn/how-to-play-american-mahjong/">How to Play</a></li><li><a href="../../rules/glossary/">Mahjong Glossary</a></li><li><a href="../../rules/table-setup/">Table Setup</a></li><li><a href="../../learn/mahjong-cheat-sheet/">Printable Cheat Sheet</a></li><li><a href="../../learn/american-mahjong-tiles/">Tiles Explained</a></li></ul></div>
+<div><h2>Rules</h2><ul><li><a href="../../rules/how-to-read-nmjl-card/">Read the NMJL Card</a></li><li><a href="../../rules/joker-rules/">Joker Rules</a></li><li><a href="../../rules/dead-hand/">Dead Hands</a></li><li><a href="../../rules/chinese-vs-american-mahjong/">Chinese vs. American</a></li><li><a href="../../rules/mahjong-scoring-payouts/">Scoring &amp; Payouts</a></li><li><a href="../../rules/mahjong-etiquette/">Etiquette</a></li></ul></div>
+<div><h2>Strategy</h2><ul><li><a href="../../strategy/charleston/">Charleston</a></li><li><a href="../../strategy/mahjong-defense/">Defense</a></li><li><a href="../../strategy/">Beginner Strategy</a></li><li><a href="../../play/flower-match/">Flower Match</a></li></ul></div>
+<div><h2>Community</h2><ul><li><a href="../../community/find-local-mahjong/">Find a Game</a></li><li><a href="../../community/host-mahjong-night/">Host a Game Night</a></li><li><a href="../../community/teach-a-beginner/">Teach a Beginner</a></li><li><a href="../../community/teach-mahjong-lessons/">Teach Lessons</a></li><li><a href="../../community/play-american-mahjong-online/">Play Online</a></li></ul></div>
+<div><h2>About</h2><ul><li><a href="../../about/">About</a></li><li><a href="../../editorial-policy/">Editorial Policy</a></li><li><a href="../../contact/">Contact</a></li><li><a href="../../privacy/">Privacy</a></li><li><a href="../../terms/">Terms</a></li><li><a href="../../affiliate-disclosure/">Affiliate Disclosure</a></li></ul></div>
+</nav>
+</div>
+<div class="container footer__legal">
+<p>MahjongKit is an independent educational website and is not affiliated with or endorsed by the National Mah Jongg League.</p>
+<p>© 2026 MahjongKit. Original text and illustrations on this site belong to MahjongKit. Other names and marks belong to their respective owners.</p>
+</div>
 </footer>
-<script src="../../assets/js/main.js?v=5" defer></script>
-<script src="../../assets/js/flower-match.js?v=5" defer></script>
+<script defer="" src="../../assets/js/main.js?v=5"></script>
+<script defer="" src="../../assets/js/flower-match.js?v=6"></script>
 </body>
 </html>

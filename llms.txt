@@ -1,0 +1,53 @@
+# MahjongKit
+
+> MahjongKit is an independent educational website about American Mah Jongg, focused on beginner-friendly NMJL-style play. It explains rules, the annual card, Jokers, the Charleston, setup, strategy, gear, community, and practice. MahjongKit is not affiliated with or endorsed by the National Mah Jongg League and does not reproduce the annual NMJL card.
+
+Use the current page content as the source of truth for MahjongKit. American Mah Jongg house rules and tournament procedures can vary; for official NMJL play, the current National Mah Jongg League card and official materials are authoritative. Flower Match is a Mahjong-inspired pattern game, not a simulation of American Mah Jongg.
+
+## Start here
+- [Homepage](https://mahjongkit.com/): Overview of MahjongKit and major sections.
+- [Learn American Mahjong](https://mahjongkit.com/learn/): Beginner learning hub.
+- [How to Play American Mahjong](https://mahjongkit.com/learn/how-to-play-american-mahjong/): Step-by-step beginner guide.
+- [Free Mahjong Printables](https://mahjongkit.com/learn/mahjong-cheat-sheet/): Two-page table companion PDF, plus printable scoring card, etiquette and house-rules sheet, Charleston card and a coach's four-week course kit.
+- [American Mahjong Tiles Explained](https://mahjongkit.com/learn/american-mahjong-tiles/): All 152 tiles, grouped and illustrated, with how they appear on the card.
+
+## Rules
+- [American Mahjong Rules](https://mahjongkit.com/rules/): Rules hub.
+- [How to Read the NMJL Card](https://mahjongkit.com/rules/how-to-read-nmjl-card/): Colors, symbols, groups, exposed and concealed hands.
+- [Joker Rules](https://mahjongkit.com/rules/joker-rules/): Legal Joker use, exchanges, discards, and edge cases.
+- [Dead Hands](https://mahjongkit.com/rules/dead-hand/): Common causes and what happens after a hand is declared dead.
+- [Table Setup](https://mahjongkit.com/rules/table-setup/): Walls, seating, dealer, breaking the wall, and dealing.
+- [Mahjong Glossary](https://mahjongkit.com/rules/glossary/): American Mah Jongg terminology.
+- [Chinese vs. American Mahjong](https://mahjongkit.com/rules/chinese-vs-american-mahjong/): Major differences between the game families.
+- [Scoring and Payouts](https://mahjongkit.com/rules/mahjong-scoring-payouts/): Who pays what after a win, Jokerless doubles, wall games and dead hands.
+- [Mahjong Etiquette](https://mahjongkit.com/rules/mahjong-etiquette/): Table manners and unwritten rules for American Mahjong.
+
+## Strategy
+- [Beginner Strategy](https://mahjongkit.com/strategy/): Strategy hub.
+- [The Charleston](https://mahjongkit.com/strategy/charleston/): Passing order, blind pass, courtesy pass, and beginner strategy.
+- [Defense and the Endgame](https://mahjongkit.com/strategy/mahjong-defense/): When to play defensively, reading exposures, and safer discards.
+
+## Gear
+- [Gear Guides](https://mahjongkit.com/gear/): Sets, mats, and tile materials.
+- [Best American Mahjong Sets](https://mahjongkit.com/gear/best-american-mahjong-sets/): What to look for in a set.
+- [Best Mahjong Mats](https://mahjongkit.com/gear/best-mahjong-mats/): Mat materials, sizing, and buying considerations.
+- [Mahjong Tile Materials](https://mahjongkit.com/gear/mahjong-tile-materials/): Melamine, acrylic, porcelain, and other material considerations.
+
+## Community
+- [Community](https://mahjongkit.com/community/): Social-play resources.
+- [Find a Local Mahjong Game](https://mahjongkit.com/community/find-local-mahjong/): Places and services that can help players find games.
+- [Host a Mahjong Night](https://mahjongkit.com/community/host-mahjong-night/): Hosting checklist and table logistics.
+- [Teach a Beginner](https://mahjongkit.com/community/teach-a-beginner/): A practical first-game teaching plan.
+- [Teach Mahjong Lessons](https://mahjongkit.com/community/teach-mahjong-lessons/): Four-week course plan, pricing, venues and starting a club.
+- [Play American Mahjong Online](https://mahjongkit.com/community/play-american-mahjong-online/): Online-play options and considerations.
+
+## Play
+- [Flower Match](https://mahjongkit.com/play/flower-match/): A relaxing Mahjong-inspired matching game; it is not American Mah Jongg itself.
+
+## About and policies
+- [About MahjongKit](https://mahjongkit.com/about/): Site purpose and independence statement.
+- [Editorial Policy](https://mahjongkit.com/editorial-policy/): How content is researched, updated, and corrected.
+- [Affiliate Disclosure](https://mahjongkit.com/affiliate-disclosure/): Commercial disclosure.
+- [Privacy](https://mahjongkit.com/privacy/): Privacy policy.
+- [Contact](https://mahjongkit.com/contact/): Contact and corrections.
+- [Sitemap](https://mahjongkit.com/sitemap.xml): Complete crawlable URL list.

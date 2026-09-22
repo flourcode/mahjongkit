@@ -1,6 +1,6 @@
 /* MahjongKit — flower-match.js
    Flower Match: a calm, Mahjong-inspired matching game.
-   Every board has exactly one identical pair. Find it, and a fresh board deals.
+   Every board has exactly one identical pair. Find it, the tiles flip to their pink backs, and a fresh board deals face-up.
    All flower art is drawn in code as SVG (no image files, nothing copied).
    Works entirely in the browser: no accounts, no tracking, no timers.
 */
@@ -125,29 +125,129 @@
     return arr;
   }
 
-  function deal() {
-    picked = null; locked = false;
+  /* ---------- Tile backs and flip animation ---------- */
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var FLIP_MS = 380, STEP_MS = 45, HOLD_MS = 140, POP_MS = 520;
+
+  // Pink tile back: a white scalloped flower, like the MahjongKit logo.
+  var BACK = (function () {
+    var s = '', i, p;
+    for (i = 0; i < 12; i++) { p = polar(50, 50, 33, i * 30); s += '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="11.5"/>'; }
+    return '<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g fill="#FFFFFF">' + s +
+      '<circle cx="50" cy="50" r="34"/></g><circle cx="50" cy="50" r="21" fill="#EE8FB6"/><circle cx="50" cy="50" r="8.5" fill="#FFFFFF"/></svg>';
+  })();
+
+  function tileEls() { return Array.prototype.slice.call(board.querySelectorAll('.ftile')); }
+
+  // Delay for each tile so the flip ripples outward from one tile.
+  function rippleDelay(i, origin) {
+    if (origin == null || origin < 0) origin = 0;
+    var r = Math.floor(i / cols), c = i % cols, orr = Math.floor(origin / cols), oc = origin % cols;
+    return Math.round(Math.sqrt((r - orr) * (r - orr) + (c - oc) * (c - oc)) * STEP_MS);
+  }
+
+  // Flip every tile face-down (down = true) or face-up, then call done.
+  function flipAll(down, origin, done) {
+    var els = tileEls(), maxDelay = 0;
+    els.forEach(function (el, i) {
+      var d = rippleDelay(i, origin);
+      if (d > maxDelay) maxDelay = d;
+      el.style.setProperty('--flip-delay', d + 'ms');
+      el.classList.remove('is-picked', 'is-matched', 'is-hint', 'is-wrong');
+      el.classList.toggle('is-down', down);
+      el.tabIndex = down ? -1 : 0;
+    });
+    setTimeout(done || function () {}, maxDelay + FLIP_MS);
+  }
+
+  function makeTile(d, i, faceDown) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'ftile' + (faceDown ? ' is-down' : '');
+    b.dataset.i = String(i);
+    b.setAttribute('aria-label', d.name + ' tile');
+    b.innerHTML = '<span class="ftile__inner"><span class="ftile__face">' + draw(d) +
+      '</span><span class="ftile__back">' + BACK + '</span></span>';
+    return b;
+  }
+
+  function newList() {
     var pool = shuffle(DESIGNS.slice()).slice(0, size - 1);
     pairIndex = Math.floor(Math.random() * pool.length);
     var list = pool.slice();
     list.push(pool[pairIndex]);
-    shuffle(list);
-    tiles = list;
-    board.style.setProperty('--board-cols', cols);
-    board.innerHTML = '';
-    list.forEach(function (d, i) {
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'ftile';
-      b.setAttribute('aria-label', d.name + ' tile');
-      b.dataset.i = String(i);
-      b.innerHTML = draw(d);
-      board.appendChild(b);
-    });
-    if (live) live.textContent = 'New board dealt. ' + size + ' tiles.';
+    return shuffle(list);
+  }
+
+  // Deal a board. With animate, the current tiles flip to their pink backs,
+  // the new flowers go in face-down, and the board flips up again.
+  function deal(animate, origin) {
+    picked = null;
+    var list = newList();
+    var existing = tileEls();
+    var canAnimate = animate && !reduceMotion.matches && existing.length === list.length;
+
+    function place(faceDown) {
+      tiles = list;
+      board.style.setProperty('--board-cols', cols);
+      board.innerHTML = '';
+      list.forEach(function (d, i) { board.appendChild(makeTile(d, i, faceDown)); });
+    }
+
+    if (!canAnimate) {
+      place(false);
+      locked = false;
+      board.removeAttribute('aria-busy');
+      announce('New board dealt. ' + size + ' tiles.');
+      return;
+    }
+
+    locked = true;
+    board.setAttribute('aria-busy', 'true');
+    var alreadyDown = existing.every(function (el) { return el.classList.contains('is-down'); });
+    function flipUp() {
+      place(true);
+      void board.offsetWidth;           // let the face-down tiles render before flipping
+      setTimeout(function () {
+        flipAll(false, origin, function () {
+          locked = false;
+          board.removeAttribute('aria-busy');
+        });
+        announce('New board dealt. ' + size + ' tiles.');
+      }, HOLD_MS);
+    }
+    if (alreadyDown) flipUp(); else flipAll(true, origin, flipUp);
   }
 
   function announce(msg) { if (live) live.textContent = msg; }
+
+  // A small burst of petals from the centre of a tile.
+  var PETALS = ['#F4A7C2', '#EE8FB6', '#A9CDF0', '#F0672E', '#FFD9E8'];
+  function burst(el) {
+    if (reduceMotion.matches) return;
+    var wrap = board.parentNode, wr = wrap.getBoundingClientRect(), r = el.getBoundingClientRect();
+    var cx = r.left - wr.left + r.width / 2, cy = r.top - wr.top + r.height / 2;
+    for (var k = 0; k < 12; k++) {
+      var p = document.createElement('span');
+      var ang = (k / 12) * Math.PI * 2 + Math.random() * .4;
+      var dist = r.width * (.55 + Math.random() * .45);
+      p.className = 'fm-petal';
+      p.style.left = cx + 'px';
+      p.style.top = cy + 'px';
+      p.style.background = PETALS[k % PETALS.length];
+      p.style.setProperty('--dx', (Math.cos(ang) * dist).toFixed(1) + 'px');
+      p.style.setProperty('--dy', (Math.sin(ang) * dist).toFixed(1) + 'px');
+      p.style.setProperty('--rot', Math.round(Math.random() * 540 - 270) + 'deg');
+      p.setAttribute('aria-hidden', 'true');
+      wrap.appendChild(p);
+      setTimeout((function (n) { return function () { n.remove(); }; })(p), 900);
+    }
+  }
+
+  function bump(el) {
+    if (!el) return;
+    el.classList.remove('is-bump'); void el.offsetWidth; el.classList.add('is-bump');
+  }
 
   function onTile(e) {
     var btn = e.target.closest('.ftile');
@@ -158,12 +258,20 @@
     var first = board.querySelector('[data-i="' + picked + '"]');
     if (tiles[picked] === tiles[i]) {
       locked = true;
+      first.classList.remove('is-picked');
       first.classList.add('is-matched'); btn.classList.add('is-matched');
+      burst(first); burst(btn);
       pairs++; inRound++;
       pairsEl.textContent = pairs;
+      bump(pairsEl.closest('.chip'));
       announce('Matched: ' + tiles[i].name + '. ' + pairs + ' pairs so far.');
-      if (inRound >= ROUND_LENGTH) { setTimeout(finishRound, 450); }
-      else { setTimeout(deal, 520); }
+      if (reduceMotion.matches) {
+        if (inRound >= ROUND_LENGTH) setTimeout(finishRound, 450); else setTimeout(deal, 520);
+      } else if (inRound >= ROUND_LENGTH) {
+        setTimeout(function () { flipAll(true, i, finishRound); }, POP_MS);
+      } else {
+        setTimeout(function () { deal(true, i); }, POP_MS);
+      }
     } else {
       first.classList.remove('is-picked');
       btn.classList.add('is-wrong'); first.classList.add('is-wrong');
@@ -202,11 +310,14 @@
 
   board.addEventListener('click', onTile);
   hintBtn.addEventListener('click', hint);
-  newBtn.addEventListener('click', function () { deal(); });
+  newBtn.addEventListener('click', function () {
+    if (locked && !doneBox.classList.contains('is-open')) return;   // mid-flip
+    deal(true, Math.floor(size / 2));
+  });
   againBtn.addEventListener('click', function () {
     inRound = 0;
     doneBox.classList.remove('is-open'); doneBox.setAttribute('aria-hidden', 'true');
-    deal();
+    deal(true, Math.floor(size / 2));
   });
   sizeBtns.forEach(function (b) { b.addEventListener('click', function () { setSize(Number(b.dataset.size)); }); });
 

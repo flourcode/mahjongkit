@@ -1,3 +1,4 @@
+# Public content is crawlable. Internal search results are excluded.
 User-agent: *
 Allow: /
 Disallow: /search/

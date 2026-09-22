@@ -1,4 +1,4 @@
-MAHJONGCENTER.COM - HOW THIS WEBSITE WORKS
+MAHJONGKIT.COM - HOW THIS WEBSITE WORKS
 ==========================================
 
 This folder is the complete website: plain HTML, CSS and JavaScript.
@@ -31,16 +31,14 @@ folder is 404.html, because it is designed to be shown at any address.
 ------------------------------------------------------------
 3. PLACEHOLDERS TO FILL IN (search all files for these)
 ------------------------------------------------------------
-  [CONTACT EMAIL]     contact/, privacy/, terms/, affiliate-disclosure/
-  [SITE OWNER NAME]   privacy/, terms/
-  [JURISDICTION]      terms/
+  Mark   privacy/, terms/
+  United States      terms/
 
-Search for "VERIFY CURRENT INFO" (HTML comments) before each update of
-  community/play-american-mahjong-online/
-  community/find-local-mahjong/
-  gear/best-american-mahjong-sets/
-  gear/best-mahjong-mats/
-These mark platform, product and price claims that change over time.
+Contact email: hello@mahjongkit.com (contact/, privacy/, terms/,
+affiliate-disclosure/). Set up that mailbox before launch.
+
+Pages avoid prices and dated claims on purpose, so nothing goes stale.
+If you add prices later, re-check them whenever you update the page.
 
 ------------------------------------------------------------
 4. THINGS TO ADD LATER (search for these comments)
@@ -51,10 +49,10 @@ These mark platform, product and price claims that change over time.
   <!-- GOOGLE CONSENT MANAGEMENT PLATFORM (CMP) CODE GOES HERE ... -->
       Needed for visitors in the EEA/UK/Switzerland once ads are on.
       Use Google's own CMP or another Google-certified CMP.
-  <!-- GOOGLE ANALYTICS CODE GOES HERE IF ENABLED -->
-  <!-- REPLACE WITH FINAL SOCIAL SHARE IMAGE -->
-      Currently assets/images/og-default.png (1200 x 630). Replace the
-      file with your own image and keep the name.
+  Social share image:
+      assets/images/og-default.png (1200 x 630, white / bubblegum pink /
+      powder blue MahjongKit card) is already wired into every page. Replace that file later if you want a new share design;
+      keep the same filename and no HTML changes are needed.
   <!-- AFFILIATE LINK GOES HERE AFTER APPROVAL -->
       On gear pages, inside each product block. A ready-made button is in
       the comment: fill in the URL, remove the comment marks, and keep
@@ -68,12 +66,47 @@ Ad placement: after approval, use Google Auto Ads, or place at most one
 responsive unit after an early section and one later in long articles.
 Never put an ad inside or next to the Flower Match board.
 
+
+------------------------------------------------------------
+4A. GOOGLE ANALYTICS - ONE FILE ONLY
+------------------------------------------------------------
+Every page already loads the single root file:
+
+  analytics.js
+
+To turn on GA4, open analytics.js and replace:
+
+  G-XXXXXXXXXX
+
+with your real Google Analytics Measurement ID. Do not paste Analytics
+code into each HTML page. The local analytics.js file loads Google's
+current gtag.js tag for the entire site.
+
+The filename analytics.js is just this site's local filename; it does
+NOT use Google's retired legacy analytics.js library.
+
+------------------------------------------------------------
+4B. AI / AGENT DISCOVERY
+------------------------------------------------------------
+The root file:
+
+  llms.txt
+
+contains a concise map of the site's best guides for AI agents. Every
+HTML page also includes rel="describedby" pointing to llms.txt.
+
+robots.txt already allows public crawling and blocks only /search/.
+llms.txt is supplemental discovery metadata; robots.txt remains the
+actual crawler-access control file.
+
 ------------------------------------------------------------
 5. FILE MAP
 ------------------------------------------------------------
   index.html                 Homepage
   404.html                   "Page not found"
   robots.txt, sitemap.xml    For search engines
+  llms.txt                   AI/agent-friendly site map
+  analytics.js              One-file GA4 setup (paste Measurement ID once)
   assets/css/styles.css      All styling (one file). Material 3 colour,
                              shape, type and motion tokens are at the top.
   assets/js/main.js          Menu drawer, table of contents, folder preview
@@ -81,8 +114,29 @@ Never put an ad inside or next to the Flower Match board.
   assets/js/search-index.js  The list of pages search can find
   assets/js/flower-match.js  The Flower Match game (flowers drawn in code)
   assets/images/             Favicon, logo mark, social share image, printable previews
-  assets/downloads/          The free printable PDF (mahjong-table-companion.pdf)
-  learn/ rules/ strategy/ gear/ community/ play/   Guides and sections
+  assets/downloads/          Free printable PDFs (letter size):
+                               mahjong-table-companion.pdf       2 pp landscape
+                               mahjong-scoring-payouts-card.pdf  1 p portrait
+                               mahjong-etiquette-house-rules.pdf 2 pp portrait
+                               mahjong-charleston-card.pdf       1 p portrait
+                               mahjong-dead-hands-defense-card.pdf 1 p portrait
+                               mahjong-teaching-kit.pdf          2 pp landscape
+                             All are listed on learn/mahjong-cheat-sheet/. Preview
+                             images are assets/images/table-companion-*.jpg and
+                             printable-*.jpg. If you replace a PDF, keep the same
+                             filename and regenerate its preview image.
+  learn/ rules/ strategy/ gear/ community/   Guides and sections
+  learn/american-mahjong-tiles/         Tile guide (tile art drawn inline as SVG)
+  rules/mahjong-scoring-payouts/        Scoring and payouts
+  rules/mahjong-etiquette/              Etiquette
+  community/teach-mahjong-lessons/      Teaching lessons (course, pricing, venues)
+  strategy/mahjong-defense/             Defense and the endgame
+  assets/images/mahjong-wall-diagram.svg  Wall diagram used on rules/table-setup/
+  play/flower-match/         Flower Match. Every "Play" link goes here.
+  play/index.html            Redirect only: sends old /play/ links to
+                             Flower Match (not in the sitemap).
+                             Real online Mahjong platforms, with links,
+                             live in community/play-american-mahjong-online/
   about/ contact/ editorial-policy/ privacy/ terms/ affiliate-disclosure/
   search/                    Search page (not indexed by Google)
 
@@ -140,6 +194,17 @@ Material Symbols drawn inline as SVG.
 
 The Mahjong tile motif (white tile with a chunky bubblegum-pink bottom
 and one simple symbol) is original artwork drawn with CSS and SVG.
+
+Logo and icons: the mark is the "Pink scallop" flower tile from Flower
+Match (12-petal pink flower, orange ring, white face, pink base). It is
+inlined as SVG in every page header, drawer and footer, and saved as:
+  assets/images/logo-mark.svg        full mark (40x40)
+  assets/images/logo-mark-512.png    raster logo used in Organization schema
+  assets/images/favicon.svg          tighter crop for browser tabs
+  assets/images/favicon-32.png       PNG fallback for older browsers
+  assets/images/apple-touch-icon.png iPhone/iPad home screen (180x180)
+  assets/images/icon-192.png, icon-512.png   app-style icons
+  favicon.ico (site root)            for tools that request /favicon.ico
 
 Fonts: the system font stack. No request is made to Google Fonts.
 Body text is 17-18px for comfortable reading on phones; buttons and

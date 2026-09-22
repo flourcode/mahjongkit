@@ -717,23 +717,65 @@ a.card:active { transform: scale(.985); }
   line-height: 1.55;
   color: var(--md-sys-color-on-surface-variant);
 }
+/* Hero tiles: large American Mahjong tiles (2 Bam, 5 Crak, Flower, 3 Dot,
+   Joker) fanned like a hand, over soft pink and blue circles. Same drawing
+   style as the social share card. Corner numbers use the site sans font. */
 .hero__tiles {
+  --ht-w: clamp(56px, 16vw, 84px);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 12px;
-  padding: 18px 8px 28px;
-  min-height: 120px;
+  padding: 36px 8px 44px;
+  isolation: isolate;
 }
-@media (min-width: 840px) { .hero__tiles { min-height: 220px; gap: 16px; padding-bottom: 36px; } }
-.hero__tiles .tile { --tile-w: clamp(50px, 13.5vw, 64px); }
-@media (min-width: 840px) { .hero__tiles .tile { --tile-w: 62px; } }
-@media (min-width: 1100px) { .hero__tiles .tile { --tile-w: 70px; } }
-.hero__tiles .tile:nth-child(1) { transform: rotate(-8deg) translateY(6px); }
-.hero__tiles .tile:nth-child(2) { transform: rotate(-3deg); }
-.hero__tiles .tile:nth-child(3) { transform: translateY(-8px); }
-.hero__tiles .tile:nth-child(4) { transform: rotate(3deg); }
-.hero__tiles .tile:nth-child(5) { transform: rotate(8deg) translateY(6px); }
+@media (min-width: 840px) { .hero__tiles { --ht-w: 88px; padding: 56px 0 64px; } }
+@media (min-width: 1100px) { .hero__tiles { --ht-w: 96px; } }
+.hero__tiles::before, .hero__tiles::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+.hero__tiles::before {
+  width: calc(var(--ht-w) * 3); aspect-ratio: 1;
+  left: 4%; top: 0;
+  background: var(--md-sys-color-primary-container);
+  opacity: .6;
+}
+.hero__tiles::after {
+  width: calc(var(--ht-w) * 3.1); aspect-ratio: 1;
+  right: 0; bottom: -4%;
+  background: var(--md-sys-color-secondary-container);
+  opacity: .75;
+}
+.htile {
+  --base: var(--mc-tile-bottom);
+  flex: none;
+  display: block;
+  width: var(--ht-w);
+  aspect-ratio: 100 / 136;
+  margin-inline: calc(var(--ht-w) * -.025);
+  background: var(--mc-tile-face);
+  border-radius: 22% / 16%;
+  box-shadow:
+    inset 0 0 0 1.5px var(--mc-tile-edge),
+    0 calc(var(--ht-w) * .09) 0 0 var(--base),
+    0 calc(var(--ht-w) * .16) calc(var(--ht-w) * .34) rgba(var(--mc-shadow-ink), .14);
+  transform: translateY(var(--y, 0)) rotate(var(--r, 0deg));
+}
+.htile svg { display: block; width: 100%; height: 100%; }
+.htile--blue { --base: #A9CDF0; }
+.htile--pink { --base: #EE9BBE; }
+.hero__tiles .htile:nth-child(1) { --r: -12deg; --y: 14px; z-index: 1; }
+.hero__tiles .htile:nth-child(2) { --r: -6deg;  --y: -6px; z-index: 2; }
+.hero__tiles .htile:nth-child(3) { --r: 0deg;   --y: -16px; z-index: 5; width: calc(var(--ht-w) * 1.12); }
+.hero__tiles .htile:nth-child(4) { --r: 6deg;   --y: -6px; z-index: 3; }
+.hero__tiles .htile:nth-child(5) { --r: 12deg;  --y: 14px; z-index: 4; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .htile--blue { --base: #7FA3C8; }
+  :root:not([data-theme="light"]) .htile--pink { --base: #C97A9E; }
+}
 
 .section { padding-block: 36px 8px; }
 .section__head { margin-bottom: 20px; max-width: 60ch; }
@@ -1113,31 +1155,81 @@ td:first-child, th:first-child { font-weight: 600; }
   max-width: 600px;
 }
 @media (min-width: 600px) { .board { gap: 12px; } }
+.board-wrap { position: relative; }
+/* Each tile is a button holding a 3D card: a white flower face and a pink
+   back. After a match every tile flips to its back in a ripple, the next
+   board is dealt face-down, then everything flips face-up again. */
 .ftile {
   position: relative;
+  display: block;
   aspect-ratio: 3 / 4;
   width: 100%;
-  border: 1px solid var(--mc-tile-edge);
-  padding: 10%;
+  padding: 0;
+  border: 0;
   border-radius: 18%;
-  background: var(--mc-tile-face);
-  box-shadow: 0 7px 0 var(--mc-tile-bottom), 0 10px 18px rgba(var(--mc-shadow-ink), .08);
+  background: none;
   cursor: pointer;
+  perspective: 800px;
   -webkit-tap-highlight-color: transparent;
   transition: transform var(--md-sys-motion-duration-medium) var(--md-sys-motion-spring), outline-color var(--md-sys-motion-duration-short);
   outline: 4px solid transparent;
   outline-offset: 3px;
 }
-.ftile svg { width: 100%; height: 100%; }
-.ftile:hover { transform: translateY(-2px); }
+.ftile__inner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transition: transform 380ms cubic-bezier(.45, .05, .25, 1.15);
+  transition-delay: var(--flip-delay, 0ms);
+}
+.ftile.is-down .ftile__inner { transform: rotateY(180deg); }
+.ftile__face, .ftile__back {
+  position: absolute;
+  inset: 0;
+  border-radius: 18%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ftile__face {
+  display: block;
+  padding: 10%;
+  background: var(--mc-tile-face);
+  box-shadow: inset 0 0 0 1px var(--mc-tile-edge), 0 7px 0 var(--mc-tile-bottom), 0 10px 18px rgba(var(--mc-shadow-ink), .08);
+}
+.ftile__back {
+  display: grid;
+  place-items: center;
+  transform: rotateY(180deg);
+  background: #F4A7C2;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .45), 0 7px 0 #E283AC, 0 10px 18px rgba(var(--mc-shadow-ink), .1);
+}
+.ftile svg { display: block; width: 100%; height: 100%; }
+.ftile__back svg { width: 58%; height: auto; }
+.ftile.is-down { cursor: default; }
+.ftile:not(.is-down):hover { transform: translateY(-2px); }
 .ftile:focus-visible { outline-color: var(--mc-focus); }
 .ftile.is-picked { outline-color: var(--mc-blue-halo); transform: translateY(-2px); }
 .ftile.is-hint { animation: hint-pulse 1s ease-in-out 2; }
-.ftile.is-matched { outline-color: var(--mc-pink-halo); animation: pop .4s var(--md-sys-motion-spring); }
+.ftile.is-matched { outline-color: var(--mc-pink-halo); animation: match-pop .5s var(--md-sys-motion-spring); }
 .ftile.is-wrong { animation: shake .35s ease-in-out; }
 @keyframes hint-pulse { 0%, 100% { outline-color: transparent; } 50% { outline-color: var(--mc-pink-halo); } }
-@keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1.03); } }
+@keyframes match-pop { 0% { transform: scale(1); } 45% { transform: scale(1.14) rotate(-3deg); } 100% { transform: scale(1.04); } }
 @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+.fm-petal {
+  position: absolute;
+  z-index: 5;
+  width: 11px;
+  height: 11px;
+  border-radius: 70% 0 70% 0;
+  pointer-events: none;
+  animation: fm-burst .8s cubic-bezier(.15, .7, .3, 1) forwards;
+}
+@keyframes fm-burst {
+  0% { transform: translate(-50%, -50%) scale(.3) rotate(0); opacity: 1; }
+  70% { opacity: 1; }
+  100% { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1) rotate(var(--rot)); opacity: 0; }
+}
+.chip.is-bump { animation: match-pop .45s var(--md-sys-motion-spring); }
 .game-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px 0 14px; }
 .game-size-wrap { text-align: center; margin: 0 0 10px; }
 .game-size-wrap .label { display: block; font-size: .85rem; font-weight: 600; color: var(--md-sys-color-on-surface-variant); margin-bottom: 8px; }
@@ -1210,3 +1302,28 @@ body.page-game .breadcrumb { display: none; }
 .sheet-preview a { display: block; border-radius: var(--md-sys-shape-corner-large); overflow: hidden; box-shadow: inset 0 0 0 1px var(--md-sys-color-outline-variant), 0 8px 0 var(--mc-tile-bottom), 0 14px 24px rgba(var(--mc-shadow-ink), .1); background: #fff; }
 .sheet-preview img { width: 100%; height: auto; display: block; }
 .sheet-preview figcaption { margin-top: 16px; font-weight: 600; font-size: .95rem; color: var(--md-sys-color-on-surface-variant); }
+
+/* 13. PLAY: links out to online platforms, and the real-game card under
+   Flower Match. */
+.visit-link { margin: 4px 0 28px; }
+.visit-link .btn .md-icon { width: 18px; height: 18px; }
+.real-game-card { max-width: 620px; margin: 22px auto 0; }
+
+/* 14. TILE GALLERY (American Mahjong tiles guide) -------------------------- */
+.tile-gallery {
+  --ht-w: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 8px;
+  margin: 1.2rem 0 1.8rem;
+  padding: 16px 12px 18px;
+  border-radius: var(--md-sys-shape-corner-large);
+  background: var(--mc-blue-tint);
+}
+@media (min-width: 600px) { .tile-gallery { --ht-w: 56px; gap: 18px 12px; padding: 20px 18px 22px; } }
+.article-body .tile-spec { margin: 0; width: calc(var(--ht-w) + 6px); display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.tile-spec .htile { margin: 0; transform: none; }
+.article-body .tile-spec figcaption { margin: 0; font-size: .8rem; font-weight: 600; line-height: 1.25; text-align: center; color: var(--md-sys-color-on-surface-variant); }
+@media print { .tile-gallery { background: none; } }
+.printables { display: grid; gap: 0; max-width: 980px; }
+.printables .download-card { margin: 0 0 18px; }
