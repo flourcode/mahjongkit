@@ -74,13 +74,9 @@ Every page already loads the single root file:
 
   analytics.js
 
-To turn on GA4, open analytics.js and replace:
-
-  G-XXXXXXXXXX
-
-with your real Google Analytics Measurement ID. Do not paste Analytics
-code into each HTML page. The local analytics.js file loads Google's
-current gtag.js tag for the entire site.
+GA4 is ON. The Measurement ID G-XDQNL7NSLN is set in analytics.js
+(the GA_MEASUREMENT_ID line). To change it, edit that one line.
+Do not paste Analytics code into each HTML page.
 
 The filename analytics.js is just this site's local filename; it does
 NOT use Google's retired legacy analytics.js library.

@@ -13,7 +13,7 @@
 (function () {
   'use strict';
 
-  var GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // <-- PASTE YOUR GA4 MEASUREMENT ID HERE
+  var GA_MEASUREMENT_ID = 'G-XDQNL7NSLN'; // <-- PASTE YOUR GA4 MEASUREMENT ID HERE
 
   // Do nothing until a real GA4 ID has been entered.
   if (!/^G-[A-Z0-9]+$/i.test(GA_MEASUREMENT_ID) || GA_MEASUREMENT_ID === 'G-XXXXXXXXXX') {

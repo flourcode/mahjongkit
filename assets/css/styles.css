@@ -1327,3 +1327,14 @@ body.page-game .breadcrumb { display: none; }
 @media print { .tile-gallery { background: none; } }
 .printables { display: grid; gap: 0; max-width: 980px; }
 .printables .download-card { margin: 0 0 18px; }
+
+/* 15. 404 PAGE TILES: 4 - flower - 4, same drawing style as the homepage hero */
+.nf-tiles { --ht-w: 76px; position: relative; display: flex; justify-content: center; align-items: flex-end; gap: 0; padding: 34px 0 40px; margin-bottom: 8px; isolation: isolate; }
+@media (min-width: 600px) { .nf-tiles { --ht-w: 96px; padding: 44px 0 52px; } }
+.nf-tiles::before, .nf-tiles::after { content: ""; position: absolute; z-index: -1; border-radius: 50%; aspect-ratio: 1; }
+.nf-tiles::before { width: calc(var(--ht-w) * 2.6); left: calc(50% - var(--ht-w) * 2.2); top: 0; background: var(--md-sys-color-primary-container); opacity: .6; }
+.nf-tiles::after { width: calc(var(--ht-w) * 2.8); left: calc(50% - var(--ht-w) * .4); bottom: -6%; background: var(--md-sys-color-secondary-container); opacity: .75; }
+.nf-tiles .htile { margin-inline: calc(var(--ht-w) * -.03); }
+.nf-tiles .htile:nth-child(1) { --r: -9deg; --y: 8px; z-index: 1; }
+.nf-tiles .htile:nth-child(2) { --r: 0deg; --y: -14px; z-index: 2; width: calc(var(--ht-w) * 1.1); }
+.nf-tiles .htile:nth-child(3) { --r: 9deg; --y: 8px; z-index: 1; }
