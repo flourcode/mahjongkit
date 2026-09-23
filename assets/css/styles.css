@@ -450,36 +450,44 @@ kbd, code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; fo
 .drawer::backdrop { background: var(--md-sys-color-scrim); }
 .drawer__head {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 12px 8px 4px 20px;
+  padding: 14px 12px 10px 20px;
 }
 .drawer__head .logo, .drawer__head .brand { margin-right: 0; }
 .drawer__section {
-  font-size: .82rem; font-weight: 700; letter-spacing: .02em;
+  font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
   color: var(--md-sys-color-on-surface-variant);
-  padding: 12px 28px 4px;
+  padding: 10px 28px 6px;
   margin: 0;
 }
-.drawer__list { list-style: none; margin: 0; padding: 4px 12px; }
+/* Material 3 navigation drawer: 56dp rows, 16dp gutters, full-round active
+   indicator in secondary-container. */
+.drawer__list { list-style: none; margin: 0; padding: 0 12px; }
 .drawer__list li { margin: 0; }
 .drawer__list a {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-height: 52px;
-  padding: 8px 16px;
+  min-height: 56px;
+  padding: 0 24px 0 16px;
   border-radius: var(--md-sys-shape-corner-full);
   color: var(--md-sys-color-on-surface-variant);
-  font-weight: 600;
+  font-size: .95rem;
+  font-weight: 500;
+  letter-spacing: .01em;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.drawer__list a small { margin-left: auto; font-weight: 500; color: var(--md-sys-color-on-surface-variant); }
 .drawer__list a:hover { background: var(--md-sys-color-surface-container-high); color: var(--md-sys-color-on-surface); }
 .drawer__list a[aria-current="page"], .drawer__list a.is-active {
-  background: var(--md-sys-color-primary-container);
-  color: var(--md-sys-color-on-primary-container);
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  font-weight: 700;
 }
-.drawer__list a .md-icon { width: 22px; height: 22px; }
-.drawer hr { margin: 8px 24px; }
+.drawer__list a[aria-current="page"] .md-icon, .drawer__list a.is-active .md-icon { color: var(--md-sys-color-on-secondary-container); }
+.drawer__list a .md-icon { width: 24px; height: 24px; flex: none; }
+.drawer hr { margin: 8px 28px; border: 0; border-top: 1px solid var(--md-sys-color-outline-variant); }
+.drawer:focus, .drawer:focus-visible { outline: none; }
+.drawer__head .logo { -webkit-tap-highlight-color: transparent; }
 
 /* Footer */
 .footer {

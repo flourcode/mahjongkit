@@ -17,8 +17,9 @@
         e.preventDefault();
         drawer.showModal();
         btn.setAttribute('aria-expanded', 'true');
-        var first = drawer.querySelector('a, button');
-        if (first) first.focus();
+        // Focus the dialog itself, not the first link: focusing a link makes
+        // iOS Safari paint a focus ring around the logo when the menu opens.
+        if (typeof drawer.focus === 'function') drawer.focus();
       });
     });
     drawer.addEventListener('close', function () {
