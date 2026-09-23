@@ -183,6 +183,7 @@
   // the new flowers go in face-down, and the board flips up again.
   function deal(animate, origin) {
     picked = null;
+    resetHint();
     var list = newList();
     var existing = tileEls();
     var canAnimate = animate && !reduceMotion.matches && existing.length === list.length;
@@ -289,19 +290,41 @@
     againBtn.focus();
   }
 
+  // Gentle, two-step hint. First tap: one tile of the pair lifts and glows.
+  // Second tap: its partner glows too. Hints stay until the pair is found or a
+  // new board is dealt, so nothing disappears before a relaxed player finds it.
+  var HINT_LABEL = 'Show me a hint', HINT_AGAIN = 'Show its partner';
+  function resetHint() {
+    hintBtn.textContent = HINT_LABEL;
+    hintBtn.disabled = false;
+  }
   function hint() {
     if (locked) return;
-    var idxs = [];
-    tiles.forEach(function (d, i) { if (tiles.indexOf(d) !== tiles.lastIndexOf(d)) idxs.push(i); });
-    var show = idxs[Math.floor(Math.random() * idxs.length)];
-    var el = board.querySelector('[data-i="' + show + '"]');
+    var pair = [];
+    tiles.forEach(function (d, i) { if (tiles.indexOf(d) !== tiles.lastIndexOf(d)) pair.push(i); });
+    if (pair.length < 2) return;
+    var shown = pair.filter(function (i) {
+      var el = board.querySelector('[data-i="' + i + '"]');
+      return el && el.classList.contains('is-hint');
+    });
+    var next;
+    if (shown.length === 0) next = pair[Math.floor(Math.random() * 2)];
+    else if (shown.length === 1) next = pair[0] === shown[0] ? pair[1] : pair[0];
+    else return;
+    var el = board.querySelector('[data-i="' + next + '"]');
     if (!el) return;
     el.classList.add('is-hint');
-    setTimeout(function () { el.classList.remove('is-hint'); }, 2400);
-    announce('Hint shown. One of the pair is highlighted.');
+    if (shown.length === 0) {
+      hintBtn.textContent = HINT_AGAIN;
+      announce('Hint: one tile of the pair is glowing. Tap the button again to see its partner.');
+    } else {
+      hintBtn.disabled = true;
+      announce('Both tiles of the pair are glowing.');
+    }
   }
 
   function setSize(n) {
+    try { localStorage.setItem('mk-flower-match-size', String(n)); } catch (e) { /* storage off: fine */ }
     size = n; cols = n === 9 ? 3 : n === 16 ? 4 : 5;
     sizeBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(Number(b.dataset.size) === n)); });
     if (sizeLabel) sizeLabel.textContent = n + ' tiles';
@@ -322,5 +345,7 @@
   sizeBtns.forEach(function (b) { b.addEventListener('click', function () { setSize(Number(b.dataset.size)); }); });
 
   // Phones get a 4x4 by default; wider screens a 5x5.
-  setSize(window.matchMedia('(min-width: 600px)').matches ? 25 : 16);
+  var savedSize = null;
+  try { savedSize = Number(localStorage.getItem('mk-flower-match-size')); } catch (e) { /* storage off */ }
+  setSize([9, 16, 25].indexOf(savedSize) !== -1 ? savedSize : (window.matchMedia('(min-width: 600px)').matches ? 25 : 16));
 })();
