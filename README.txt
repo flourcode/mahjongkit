@@ -29,6 +29,23 @@ folder is 404.html, because it is designed to be shown at any address.
       https://mahjongkit.com/sitemap.xml
 
 ------------------------------------------------------------
+SITE STRUCTURE (rebuilt 22 Sept 2026)
+------------------------------------------------------------
+  learn/      Beginner path: how to play, tiles, what you need,
+              beginner strategy, Charleston, defense, find a game
+  practice/   Practice hub, Solo Practice Hand, Tile Trainer
+              (?mode=dragons, ?mode=numbers), Flower Match, play online
+  printables/ Free printables (was learn/mahjong-cheat-sheet/)
+  teach/      Teaching hub, lessons guide, teach a beginner, game night
+  rules/      Reference guides
+
+Old URLs (community/, gear/, strategy/, play/, learn/mahjong-cheat-sheet/)
+contain small redirect pages. For proper 301 redirects, paste
+amplify-redirects.json (in the bundle, next to the site folder) into Amplify > Hosting > Rewrites and redirects >
+Manage redirects > Open text editor, replacing the existing rules
+(it already includes the www and 404 rules, in the right order).
+
+------------------------------------------------------------
 3. PLACEHOLDERS TO FILL IN (search all files for these)
 ------------------------------------------------------------
   Mark   privacy/, terms/
@@ -132,6 +149,9 @@ actual crawler-access control file.
   play/tile-match/           Tile Match: practice game with real tile faces
   play/dragon-match/         Dragon Match: pair each Dragon with its suit
   play/number-match/         Number Match: same number, different suit (9 or 16 tiles)
+  play/practice-hand/        Solo Practice Hand (assets/js/practice-hand.js; the rules
+                             engine at the top of that file runs under Node for testing;
+                             tile art in assets/js/tile-faces.js)
                              (assets/js/tile-match.js, generated from the
                              Flower Match engine plus the printables' tile art)
   play/index.html            Redirect only: sends old /play/ links to

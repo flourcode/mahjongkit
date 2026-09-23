@@ -1,57 +1,55 @@
 # MahjongKit
 
-> MahjongKit is an independent educational website about American Mah Jongg, focused on beginner-friendly NMJL-style play. It explains rules, the annual card, Jokers, the Charleston, setup, strategy, gear, community, and practice. MahjongKit is not affiliated with or endorsed by the National Mah Jongg League and does not reproduce the annual NMJL card.
+> Independent, beginner-friendly guides to American Mahjong, free practice games, and resources for people who teach it. Not affiliated with the National Mah Jongg League.
 
-Use the current page content as the source of truth for MahjongKit. American Mah Jongg house rules and tournament procedures can vary; for official NMJL play, the current National Mah Jongg League card and official materials are authoritative. Flower Match is a Mahjong-inspired pattern game, not a simulation of American Mah Jongg.
+## Learn
 
-## Start here
-- [Homepage](https://mahjongkit.com/): Overview of MahjongKit and major sections.
-- [Learn American Mahjong](https://mahjongkit.com/learn/): Beginner learning hub.
-- [How to Play American Mahjong](https://mahjongkit.com/learn/how-to-play-american-mahjong/): Step-by-step beginner guide.
-- [Free Mahjong Printables](https://mahjongkit.com/learn/mahjong-cheat-sheet/): Two-page table companion PDF, plus printable scoring card, etiquette and house-rules sheet, Charleston card and a coach's four-week course kit.
-- [American Mahjong Tiles Explained](https://mahjongkit.com/learn/american-mahjong-tiles/): All 152 tiles, grouped and illustrated, with how they appear on the card.
+- [Learn American Mahjong in 4 Lessons](https://mahjongkit.com/learn/course/): Free course; lessons on tiles and flow, the Charleston, calling and Jokers, and winning and scoring.
+- [How to Play American Mahjong](https://mahjongkit.com/learn/how-to-play-american-mahjong/): The whole game in plain English.
+- [American Mahjong Tiles Explained](https://mahjongkit.com/learn/american-mahjong-tiles/): All 152 tiles, grouped and illustrated.
+- [What You Need to Start](https://mahjongkit.com/learn/what-you-need/): Set, card and table; what to check and what to skip.
+- [Beginner Strategy](https://mahjongkit.com/learn/beginner-strategy/): Six principles for your first games.
+- [The Charleston](https://mahjongkit.com/learn/charleston/): Passing order, blind pass, courtesy pass and strategy.
+- [Defense and the Endgame](https://mahjongkit.com/learn/defense/): When to play defensively and safer discards.
+- [Find a Game](https://mahjongkit.com/learn/find-a-game/): Where American Mahjong games happen locally.
+
+## Practice
+
+- [Solo Practice Hand](https://mahjongkit.com/practice/practice-hand/): Single-player practice hand with an original practice card and real Joker rules.
+- [Tile Trainer](https://mahjongkit.com/practice/tile-trainer/): Practice games: tiles, Dragon pairings, numbers and suits.
+- [Free Printables](https://mahjongkit.com/printables/): Table companion, Charleston card, scoring card, dead hands card, etiquette sheet, lesson plan.
+- [Practice Workbook](https://mahjongkit.com/practice/workbook/): Paid printable drills with answer key.
+- [Mahjong Solitaire](https://mahjongkit.com/practice/mahjong-solitaire/): Free matching puzzle with mahjong tiles; every deal solvable.
+- [Flower Match](https://mahjongkit.com/practice/flower-match/): A relaxing Mahjong-inspired pattern game.
+- [Play Online](https://mahjongkit.com/practice/play-online/): Where to play real American Mahjong online.
+
+## Teach
+
+- [Teach American Mahjong](https://mahjongkit.com/teach/): Hub for teachers: free course plan, printables to share, pricing and venues.
+- [How to Teach Mahjong Lessons](https://mahjongkit.com/teach/mahjong-lessons/): Four-week course plan, pricing, venues and starting a club.
+- [Teach a Beginner](https://mahjongkit.com/teach/teach-a-beginner/): Teaching one friend their first game.
+- [Host a Game Night](https://mahjongkit.com/teach/host-a-game-night/): Setting up a friendly game night.
+
+- [How Much to Charge for Mahjong Lessons](https://mahjongkit.com/teach/how-much-to-charge/)
+- [How to Start a Mahjong Club](https://mahjongkit.com/teach/start-a-mahjong-club/)
+- [Where to Teach Mahjong](https://mahjongkit.com/teach/where-to-teach/)
+- [Private Mahjong Lessons](https://mahjongkit.com/teach/private-mahjong-lessons/)
+- [Do You Need a Mahjong Teacher Certification?](https://mahjongkit.com/teach/mahjong-teacher-certification/)
+- [Teacher’s Kit](https://mahjongkit.com/teach/teachers-kit/): Paid four-week course kit with the Practice Workbook.
 
 ## Rules
-- [American Mahjong Rules](https://mahjongkit.com/rules/): Rules hub.
-- [How to Read the NMJL Card](https://mahjongkit.com/rules/how-to-read-nmjl-card/): Colors, symbols, groups, exposed and concealed hands.
-- [Joker Rules](https://mahjongkit.com/rules/joker-rules/): Legal Joker use, exchanges, discards, and edge cases.
-- [Dead Hands](https://mahjongkit.com/rules/dead-hand/): Common causes and what happens after a hand is declared dead.
-- [Table Setup](https://mahjongkit.com/rules/table-setup/): Walls, seating, dealer, breaking the wall, and dealing.
-- [Mahjong Glossary](https://mahjongkit.com/rules/glossary/): American Mah Jongg terminology.
-- [Chinese vs. American Mahjong](https://mahjongkit.com/rules/chinese-vs-american-mahjong/): Major differences between the game families.
-- [Scoring and Payouts](https://mahjongkit.com/rules/mahjong-scoring-payouts/): Who pays what after a win, Jokerless doubles, wall games and dead hands.
-- [Mahjong Etiquette](https://mahjongkit.com/rules/mahjong-etiquette/): Table manners and unwritten rules for American Mahjong.
 
-## Strategy
-- [Beginner Strategy](https://mahjongkit.com/strategy/): Strategy hub.
-- [The Charleston](https://mahjongkit.com/strategy/charleston/): Passing order, blind pass, courtesy pass, and beginner strategy.
-- [Defense and the Endgame](https://mahjongkit.com/strategy/mahjong-defense/): When to play defensively, reading exposures, and safer discards.
+- [Payout Calculator](https://mahjongkit.com/rules/payout-calculator/): Who pays what after a win.
+- [How to Read the NMJL Card](https://mahjongkit.com/rules/how-to-read-nmjl-card/): Colors, letters, groups, X and C.
+- [Joker Rules](https://mahjongkit.com/rules/joker-rules/): Where Jokers can be used and exchanges.
+- [Dead Hands](https://mahjongkit.com/rules/dead-hand/): What kills a hand and how challenges work.
+- [Scoring and Payouts](https://mahjongkit.com/rules/mahjong-scoring-payouts/): Who pays what.
+- [Mahjong Etiquette](https://mahjongkit.com/rules/mahjong-etiquette/): Table manners and the misnamed-discard rule.
+- [Table Setup](https://mahjongkit.com/rules/table-setup/): Building and breaking the wall.
+- [Glossary](https://mahjongkit.com/rules/glossary/): Mahjong terms.
+- [Chinese vs. American Mahjong](https://mahjongkit.com/rules/chinese-vs-american-mahjong/): Key differences.
 
-## Gear
-- [Gear Guides](https://mahjongkit.com/gear/): Sets, mats, and tile materials.
-- [Best American Mahjong Sets](https://mahjongkit.com/gear/best-american-mahjong-sets/): What to look for in a set.
-- [Best Mahjong Mats](https://mahjongkit.com/gear/best-mahjong-mats/): Mat materials, sizing, and buying considerations.
-- [Mahjong Tile Materials](https://mahjongkit.com/gear/mahjong-tile-materials/): Melamine, acrylic, porcelain, and other material considerations.
+## About
 
-## Community
-- [Community](https://mahjongkit.com/community/): Social-play resources.
-- [Find a Local Mahjong Game](https://mahjongkit.com/community/find-local-mahjong/): Places and services that can help players find games.
-- [Host a Mahjong Night](https://mahjongkit.com/community/host-mahjong-night/): Hosting checklist and table logistics.
-- [Teach a Beginner](https://mahjongkit.com/community/teach-a-beginner/): A practical first-game teaching plan.
-- [Teach American Mahjong](https://mahjongkit.com/teach/): Hub for teachers: free course plan, printables to share, pricing and venues.
-- [Teach Mahjong Lessons](https://mahjongkit.com/community/teach-mahjong-lessons/): Four-week course plan, pricing, venues and starting a club.
-- [Play American Mahjong Online](https://mahjongkit.com/community/play-american-mahjong-online/): Online-play options and considerations.
-
-## Play
-- [Tile Match](https://mahjongkit.com/play/tile-match/): Practice game for learning the real American Mahjong tiles.
-- [Dragon Match](https://mahjongkit.com/play/dragon-match/): Practice game pairing each Dragon with its suit.
-- [Number Match](https://mahjongkit.com/play/number-match/): Practice game: same number, different suit.
-- [Flower Match](https://mahjongkit.com/play/flower-match/): A relaxing Mahjong-inspired matching game; it is not American Mah Jongg itself.
-
-## About and policies
-- [About MahjongKit](https://mahjongkit.com/about/): Site purpose and independence statement.
-- [Editorial Policy](https://mahjongkit.com/editorial-policy/): How content is researched, updated, and corrected.
-- [Affiliate Disclosure](https://mahjongkit.com/affiliate-disclosure/): Commercial disclosure.
-- [Privacy](https://mahjongkit.com/privacy/): Privacy policy.
-- [Contact](https://mahjongkit.com/contact/): Contact and corrections.
-- [Sitemap](https://mahjongkit.com/sitemap.xml): Complete crawlable URL list.
+- [About MahjongKit](https://mahjongkit.com/about/)
+- [Editorial Policy](https://mahjongkit.com/editorial-policy/)

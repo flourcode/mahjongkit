@@ -2,56 +2,253 @@
    keywords = extra words people might type. URLs are site-root paths; search.js makes them relative. */
 var SEARCH_INDEX = [
   {
-    "title": "Number Match",
-    "url": "/play/number-match/",
-    "category": "Play",
-    "description": "A calm practice game: find the two tiles with the same number in different suits. The idea that makes the card readable.",
+    "title": "Mahjong Solitaire",
+    "url": "/practice/mahjong-solitaire/",
+    "category": "Practice",
+    "description": "Play Mahjong Solitaire free: match free pairs to clear the board. Every deal can be cleared.",
     "keywords": [
-      "number match",
-      "same number",
-      "different suit",
-      "like numbers",
-      "suits",
-      "colors",
+      "solitaire",
+      "mahjong solitaire",
+      "matching",
+      "puzzle",
+      "game",
+      "free",
+      "no download",
+      "shanghai"
+    ]
+  },
+  {
+    "title": "Practice Workbook",
+    "url": "/practice/workbook/",
+    "category": "Practice",
+    "description": "Practice Workbook.",
+    "keywords": [
+      "workbook",
+      "drills",
+      "practice",
+      "printable",
+      "buy"
+    ]
+  },
+  {
+    "title": "Teacher’s Kit",
+    "url": "/teach/teachers-kit/",
+    "category": "Teach",
+    "description": "Teacher’s Kit.",
+    "keywords": [
+      "teacher kit",
+      "lesson plans",
+      "handouts",
+      "course",
+      "buy"
+    ]
+  },
+  {
+    "title": "Payout Calculator",
+    "url": "/rules/payout-calculator/",
+    "category": "Rules",
+    "description": "Payout Calculator.",
+    "keywords": [
+      "calculator",
+      "payout",
+      "scoring",
+      "pay",
+      "money",
+      "jokerless",
+      "self-drawn"
+    ]
+  },
+  {
+    "title": "Do You Need a Mahjong Teacher Certification?",
+    "url": "/teach/mahjong-teacher-certification/",
+    "category": "Teach",
+    "description": "Do You Need a Mahjong Teacher Certification?.",
+    "keywords": [
+      "certification",
+      "certified",
+      "certificate",
+      "instructor",
+      "accreditation",
+      "license"
+    ]
+  },
+  {
+    "title": "Private Mahjong Lessons and Mahj Parties",
+    "url": "/teach/private-mahjong-lessons/",
+    "category": "Teach",
+    "description": "Private Mahjong Lessons and Mahj Parties.",
+    "keywords": [
+      "private lessons",
+      "party",
+      "mahj party",
+      "friends",
+      "home"
+    ]
+  },
+  {
+    "title": "Where to Teach Mahjong",
+    "url": "/teach/where-to-teach/",
+    "category": "Teach",
+    "description": "Where to Teach Mahjong.",
+    "keywords": [
+      "venue",
+      "library",
+      "community center",
+      "cafe",
+      "where to teach",
+      "senior center"
+    ]
+  },
+  {
+    "title": "How to Start a Mahjong Club",
+    "url": "/teach/start-a-mahjong-club/",
+    "category": "Teach",
+    "description": "How to Start a Mahjong Club.",
+    "keywords": [
+      "club",
+      "start a club",
+      "group",
+      "open play",
+      "league"
+    ]
+  },
+  {
+    "title": "How Much to Charge for Mahjong Lessons",
+    "url": "/teach/how-much-to-charge/",
+    "category": "Teach",
+    "description": "How Much to Charge for Mahjong Lessons.",
+    "keywords": [
+      "price",
+      "pricing",
+      "charge",
+      "how much",
+      "rates",
+      "fees",
+      "side hustle",
+      "income",
+      "money"
+    ]
+  },
+  {
+    "title": "Lesson 4: Winning, Dead Hands and Scoring",
+    "url": "/learn/lesson-4-winning-and-scoring/",
+    "category": "Learn",
+    "description": "Declaring Mahjong, dead hands, payouts and table manners.",
+    "keywords": [
+      "lesson 4",
+      "mahjong",
+      "dead hand",
+      "scoring",
+      "payout",
+      "etiquette"
+    ]
+  },
+  {
+    "title": "Lesson 3: Calling Tiles and Using Jokers",
+    "url": "/learn/lesson-3-calling-and-jokers/",
+    "category": "Learn",
+    "description": "Calling discards, exposures, Joker rules and exchanges.",
+    "keywords": [
+      "lesson 3",
+      "call",
+      "calling",
+      "exposure",
+      "jokers",
+      "joker exchange"
+    ]
+  },
+  {
+    "title": "Lesson 2: The Charleston and Choosing a Hand",
+    "url": "/learn/lesson-2-charleston/",
+    "category": "Learn",
+    "description": "Sorting your rack, choosing a hand and the Charleston.",
+    "keywords": [
+      "lesson 2",
+      "charleston",
+      "pass",
+      "choose a hand",
+      "sort"
+    ]
+  },
+  {
+    "title": "Lesson 1: The Tiles, the Card and the Flow of Play",
+    "url": "/learn/lesson-1-tiles-and-flow/",
+    "category": "Learn",
+    "description": "Tiles, reading the card, setting up the wall and playing turns.",
+    "keywords": [
+      "lesson 1",
+      "tiles",
       "card",
-      "game",
-      "practice"
+      "wall",
+      "deal",
+      "turn"
     ]
   },
   {
-    "title": "Dragon Match",
-    "url": "/play/dragon-match/",
-    "category": "Play",
-    "description": "A calm practice game: pair each Dragon with its suit. Red with Craks, Green with Bams, Soap with Dots.",
+    "title": "Free Course: Learn American Mahjong in 4 Lessons",
+    "url": "/learn/course/",
+    "category": "Learn",
+    "description": "A free step-by-step course with practice games and self-checks.",
     "keywords": [
-      "dragon match",
-      "dragons",
-      "matching dragons",
-      "which dragon goes with",
-      "red dragon",
-      "green dragon",
-      "soap",
-      "white dragon",
-      "game",
-      "practice"
+      "course",
+      "free course",
+      "lessons",
+      "learn",
+      "beginner",
+      "step by step",
+      "class"
     ]
   },
   {
-    "title": "Tile Match",
-    "url": "/play/tile-match/",
+    "title": "Solo Practice Hand",
+    "url": "/practice/practice-hand/",
     "category": "Play",
-    "description": "A calm practice game: find the matching pair of real American Mahjong tiles, and learn their names as you go.",
+    "description": "Play an American Mahjong hand on your own: a real set and wall, draw and discard, real Joker rules, and a practice card that tells you what you still need.",
     "keywords": [
-      "tile match",
-      "tiles game",
-      "learn tiles",
+      "practice hand",
+      "solo",
+      "play mahjong",
+      "play online",
+      "single player",
       "practice",
       "game",
-      "play",
-      "recognize tiles",
-      "craks",
+      "draw and discard",
+      "jokers",
+      "build a hand"
+    ]
+  },
+  {
+    "title": "Tile Trainer",
+    "url": "/practice/tile-trainer/",
+    "category": "Practice",
+    "description": "Three calm games: learn every tile, pair each Dragon with its suit, and find the same number in different suits.",
+    "keywords": [
       "bams",
-      "dots"
+      "card",
+      "colors",
+      "craks",
+      "different suit",
+      "dots",
+      "dragon match",
+      "dragons",
+      "game",
+      "green dragon",
+      "learn tiles",
+      "like numbers",
+      "matching dragons",
+      "number match",
+      "play",
+      "practice",
+      "recognize tiles",
+      "red dragon",
+      "same number",
+      "soap",
+      "suits",
+      "tile match",
+      "tile trainer",
+      "tiles game",
+      "which dragon goes with",
+      "white dragon"
     ]
   },
   {
@@ -60,23 +257,24 @@ var SEARCH_INDEX = [
     "category": "Teach",
     "description": "Free four-week course plan, printable student handouts, what to charge, where to teach, and paid kits for teachers.",
     "keywords": [
+      "class",
+      "community",
+      "course",
+      "handouts",
+      "how to teach mahjong",
+      "instructor",
+      "lesson plan",
+      "lessons",
+      "printables for students",
       "teach",
       "teacher",
-      "teaching",
-      "instructor",
-      "lessons",
-      "class",
-      "course",
-      "lesson plan",
-      "handouts",
-      "printables for students",
-      "how to teach mahjong"
+      "teaching"
     ]
   },
   {
     "title": "Defense and the Endgame",
-    "url": "/strategy/mahjong-defense/",
-    "category": "Strategy",
+    "url": "/learn/defense/",
+    "category": "Learn",
     "description": "When to stop chasing your hand, how to read exposures, and which discards are safest late in American Mahjong.",
     "keywords": [
       "defense",
@@ -153,7 +351,7 @@ var SEARCH_INDEX = [
   },
   {
     "title": "Teach Mahjong Lessons",
-    "url": "/community/teach-mahjong-lessons/",
+    "url": "/teach/mahjong-lessons/",
     "category": "Community",
     "description": "A four-week beginner course plan, class format, how much to charge, where to teach and how to start a Mahjong club.",
     "keywords": [
@@ -195,17 +393,8 @@ var SEARCH_INDEX = [
     ]
   },
   {
-    "title": "Mahjong Community",
-    "url": "/community/",
-    "category": "Mahjong Community",
-    "description": "Find a local American Mahjong game, host your own game night, teach a beginner well, and know where to play online with the real card.",
-    "keywords": [
-      "community"
-    ]
-  },
-  {
     "title": "Find a Local Game",
-    "url": "/community/find-local-mahjong/",
+    "url": "/learn/find-a-game/",
     "category": "Community",
     "description": "Libraries, community centers, JCCs, Meetup, Facebook groups, teacher directories and tournament organizers.",
     "keywords": [
@@ -226,7 +415,7 @@ var SEARCH_INDEX = [
   },
   {
     "title": "Host a Game Night",
-    "url": "/community/host-mahjong-night/",
+    "url": "/teach/host-a-game-night/",
     "category": "Community",
     "description": "Table setup, clean-hands snacks, where the drinks go, and how to agree house rules before the first wall is built.",
     "keywords": [
@@ -244,7 +433,7 @@ var SEARCH_INDEX = [
   },
   {
     "title": "Play Online",
-    "url": "/community/play-american-mahjong-online/",
+    "url": "/practice/play-online/",
     "category": "Community",
     "description": "The platforms that actually play NMJL-style American Mahjong, with Jokers and the Charleston, against people or bots.",
     "keywords": [
@@ -264,7 +453,7 @@ var SEARCH_INDEX = [
   },
   {
     "title": "Teach a Beginner",
-    "url": "/community/teach-a-beginner/",
+    "url": "/teach/teach-a-beginner/",
     "category": "Community",
     "description": "Play the first game open-hand, give a five-minute overview, appoint one teacher, and skip the scoring.",
     "keywords": [
@@ -303,71 +492,53 @@ var SEARCH_INDEX = [
     ]
   },
   {
-    "title": "Mahjong Gear",
-    "url": "/gear/",
-    "category": "Mahjong Gear",
-    "description": "What to look for in an American Mahjong set, how tile materials compare, and how to choose a mat. Research-based guides, not sales pages.",
+    "title": "What You Need to Start",
+    "url": "/learn/what-you-need/",
+    "category": "Learn",
+    "description": "The set, the card and a table: what to check before you buy, and what beginners can skip.",
     "keywords": [
-      "gear"
-    ]
-  },
-  {
-    "title": "Best American Mahjong Sets",
-    "url": "/gear/best-american-mahjong-sets/",
-    "category": "Gear",
-    "description": "What a regulation set needs, how we compared sets, and picks for beginners, travel, durability and budget.",
-    "keywords": [
-      "set",
-      "sets",
-      "buy",
-      "buying",
-      "best set",
-      "beginner set",
-      "travel set",
-      "yellow mountain imports",
-      "white swan",
-      "racks",
-      "pushers",
+      "152 tiles",
       "166 tiles",
-      "case"
-    ]
-  },
-  {
-    "title": "Best Mahjong Mats",
-    "url": "/gear/best-mahjong-mats/",
-    "category": "Gear",
-    "description": "Neoprene vs. felt, the right size for a card table, how to store a mat, and mats known for value or style.",
-    "keywords": [
-      "mat",
-      "mats",
-      "neoprene",
-      "felt",
-      "table cover",
-      "size",
       "31 inch",
       "33 inch",
-      "card table",
-      "noise",
-      "storage"
-    ]
-  },
-  {
-    "title": "Tile Materials",
-    "url": "/gear/mahjong-tile-materials/",
-    "category": "Gear",
-    "description": "How melamine, acrylic and porcelain compare for feel, sound, durability and looks, and which to buy for real play.",
-    "keywords": [
-      "melamine",
       "acrylic",
-      "porcelain",
-      "ceramic",
-      "bone",
       "bamboo",
-      "materials",
-      "tiles",
+      "beginner set",
+      "best set",
+      "bone",
+      "buy",
+      "buy a set",
+      "buying",
+      "card table",
+      "case",
+      "ceramic",
       "durability",
+      "felt",
+      "gear",
+      "large print card",
+      "mahjong set",
+      "mat",
+      "materials",
+      "mats",
+      "melamine",
+      "neoprene",
+      "noise",
+      "porcelain",
+      "pushers",
+      "racks",
+      "set",
+      "sets",
+      "size",
       "sound",
-      "weight"
+      "storage",
+      "supplies",
+      "table cover",
+      "tiles",
+      "travel set",
+      "weight",
+      "what you need",
+      "white swan",
+      "yellow mountain imports"
     ]
   },
   {
@@ -406,35 +577,35 @@ var SEARCH_INDEX = [
     ]
   },
   {
-    "title": "Printable cheat sheet (PDF)",
-    "url": "/learn/mahjong-cheat-sheet/",
-    "category": "Learn",
-    "description": "Free printables: the two-page table companion, plus a scoring and payouts card, table manners and house rules sheet, Charleston quick card and a coach's four-week course kit.",
+    "title": "Free Printables",
+    "url": "/printables/",
+    "category": "Practice",
+    "description": "Free American Mahjong printables: table companion, Charleston card, scoring card, dead hands card, etiquette sheet and lesson plan.",
     "keywords": [
-      "printable",
+      "charleston card",
       "cheat sheet",
-      "pdf",
+      "coach",
       "download",
+      "etiquette sheet",
+      "house rules",
+      "lesson plan",
+      "payout chart",
+      "pdf",
+      "print",
+      "printable",
+      "printables",
+      "reference",
+      "scoring card",
+      "table companion",
+      "teaching kit",
       "tile chart",
       "tile names",
-      "reference",
-      "print",
-      "table companion",
-      "what do i do now",
-      "printables",
-      "scoring card",
-      "payout chart",
-      "house rules",
-      "etiquette sheet",
-      "charleston card",
-      "lesson plan",
-      "teaching kit",
-      "coach"
+      "what do i do now"
     ]
   },
   {
     "title": "Flower Match",
-    "url": "/play/flower-match/",
+    "url": "/practice/flower-match/",
     "category": "Play",
     "description": "Find the one matching pair of flower tiles. No timer, no pressure.",
     "keywords": [
@@ -600,8 +771,8 @@ var SEARCH_INDEX = [
   },
   {
     "title": "American Mahjong Strategy",
-    "url": "/strategy/",
-    "category": "American Mahjong Strategy",
+    "url": "/learn/beginner-strategy/",
+    "category": "Learn",
     "description": "Beginner strategy for American Mahjong: how to use the Charleston, when to commit to a hand, defensive discards, and how to get value from Jokers.",
     "keywords": [
       "strategy"
@@ -609,8 +780,8 @@ var SEARCH_INDEX = [
   },
   {
     "title": "The Charleston",
-    "url": "/strategy/charleston/",
-    "category": "Strategy",
+    "url": "/learn/charleston/",
+    "category": "Learn",
     "description": "Right, across, left, then left, across, right. The passing sequence explained, plus the blind pass and what never to give away.",
     "keywords": [
       "charleston",
@@ -633,5 +804,17 @@ var SEARCH_INDEX = [
       "terms",
       "legal"
     ]
+  },
+  {
+    "keywords": [
+      "free",
+      "games",
+      "play",
+      "practice"
+    ],
+    "title": "Practice",
+    "url": "/practice/",
+    "category": "Practice",
+    "description": "Free practice games and printables for American Mahjong beginners."
   }
 ];

@@ -3,21 +3,18 @@
   <url><loc>https://mahjongkit.com/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/about/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/affiliate-disclosure/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/community/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/community/find-local-mahjong/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/community/host-mahjong-night/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/community/play-american-mahjong-online/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/community/teach-a-beginner/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/find-a-game/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/host-a-game-night/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/practice/play-online/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/teach-a-beginner/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/contact/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/editorial-policy/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/gear/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/gear/best-american-mahjong-sets/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/gear/best-mahjong-mats/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/gear/mahjong-tile-materials/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/what-you-need/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/learn/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/learn/how-to-play-american-mahjong/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/learn/mahjong-cheat-sheet/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/play/flower-match/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/printables/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/practice/flower-match/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/privacy/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/rules/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/rules/chinese-vs-american-mahjong/</loc><lastmod>2026-09-21</lastmod></url>
@@ -26,16 +23,28 @@
   <url><loc>https://mahjongkit.com/rules/how-to-read-nmjl-card/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://mahjongkit.com/rules/joker-rules/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/rules/table-setup/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/strategy/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/strategy/charleston/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/beginner-strategy/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/charleston/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://mahjongkit.com/terms/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/learn/american-mahjong-tiles/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://mahjongkit.com/rules/mahjong-scoring-payouts/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://mahjongkit.com/rules/mahjong-etiquette/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/community/teach-mahjong-lessons/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://mahjongkit.com/strategy/mahjong-defense/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/teach/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/play/tile-match/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/play/dragon-match/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://mahjongkit.com/play/number-match/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/mahjong-lessons/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/defense/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/practice/tile-trainer/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/practice/practice-hand/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/course/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/lesson-1-tiles-and-flow/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/lesson-2-charleston/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/lesson-3-calling-and-jokers/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/learn/lesson-4-winning-and-scoring/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/how-much-to-charge/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/start-a-mahjong-club/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/where-to-teach/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/private-mahjong-lessons/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/mahjong-teacher-certification/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/rules/payout-calculator/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/teach/teachers-kit/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/practice/workbook/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://mahjongkit.com/practice/mahjong-solitaire/</loc><lastmod>2026-09-22</lastmod></url>
 </urlset>
