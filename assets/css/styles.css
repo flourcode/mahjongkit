@@ -1338,3 +1338,9 @@ body.page-game .breadcrumb { display: none; }
 .nf-tiles .htile:nth-child(1) { --r: -9deg; --y: 8px; z-index: 1; }
 .nf-tiles .htile:nth-child(2) { --r: 0deg; --y: -14px; z-index: 2; width: calc(var(--ht-w) * 1.1); }
 .nf-tiles .htile:nth-child(3) { --r: 9deg; --y: 8px; z-index: 1; }
+
+/* 16. TEACH HUB: two-up product cards with prices */
+.two-up { display: grid; gap: 16px; margin: 1.2rem 0 1rem; }
+@media (min-width: 720px) { .two-up { grid-template-columns: 1fr 1fr; } }
+.two-up .card { cursor: default; }
+.two-up .price { margin-top: 10px; font-weight: 800; color: var(--md-sys-color-primary); font-size: 1rem; }

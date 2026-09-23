@@ -38,6 +38,7 @@ Use the current page content as the source of truth for MahjongKit. American Mah
 - [Find a Local Mahjong Game](https://mahjongkit.com/community/find-local-mahjong/): Places and services that can help players find games.
 - [Host a Mahjong Night](https://mahjongkit.com/community/host-mahjong-night/): Hosting checklist and table logistics.
 - [Teach a Beginner](https://mahjongkit.com/community/teach-a-beginner/): A practical first-game teaching plan.
+- [Teach American Mahjong](https://mahjongkit.com/teach/): Hub for teachers: free course plan, printables to share, pricing and venues.
 - [Teach Mahjong Lessons](https://mahjongkit.com/community/teach-mahjong-lessons/): Four-week course plan, pricing, venues and starting a club.
 - [Play American Mahjong Online](https://mahjongkit.com/community/play-american-mahjong-online/): Online-play options and considerations.
 

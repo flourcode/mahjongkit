@@ -2,6 +2,25 @@
    keywords = extra words people might type. URLs are site-root paths; search.js makes them relative. */
 var SEARCH_INDEX = [
   {
+    "title": "Teach American Mahjong",
+    "url": "/teach/",
+    "category": "Teach",
+    "description": "Free four-week course plan, printable student handouts, what to charge, where to teach, and paid kits for teachers.",
+    "keywords": [
+      "teach",
+      "teacher",
+      "teaching",
+      "instructor",
+      "lessons",
+      "class",
+      "course",
+      "lesson plan",
+      "handouts",
+      "printables for students",
+      "how to teach mahjong"
+    ]
+  },
+  {
     "title": "Defense and the Endgame",
     "url": "/strategy/mahjong-defense/",
     "category": "Strategy",
