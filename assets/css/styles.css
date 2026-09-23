@@ -1390,3 +1390,10 @@ body.page-game .breadcrumb { display: none; }
 
 /* 18. Disabled buttons, per Material 3: 38% opacity, no hover lift */
 .btn:disabled, .btn[aria-disabled="true"] { opacity: .38; cursor: default; pointer-events: none; box-shadow: none; }
+
+/* 19. TILE MATCH: real tile faces fill the tile; the matched tile's name appears below */
+.tm .ftile__face { padding: 3%; }
+.match-name { min-height: 1.6em; margin: 8px 0 0; text-align: center; font-weight: 800; font-size: 1.15rem; color: var(--md-sys-color-primary); opacity: 0; }
+.match-name.is-shown { animation: name-in 2.4s ease both; }
+@keyframes name-in { 0% { opacity: 0; transform: translateY(6px); } 12%, 75% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .match-name.is-shown { animation: none; opacity: 1; } }

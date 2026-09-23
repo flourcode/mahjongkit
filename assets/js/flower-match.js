@@ -264,6 +264,7 @@
       burst(first); burst(btn);
       pairs++; inRound++;
       pairsEl.textContent = pairs;
+      var pw = document.getElementById('pairs-word'); if (pw) pw.textContent = pairs === 1 ? 'pair' : 'pairs';
       bump(pairsEl.closest('.chip'));
       announce('Matched: ' + tiles[i].name + '. ' + pairs + ' pairs so far.');
       if (reduceMotion.matches) {

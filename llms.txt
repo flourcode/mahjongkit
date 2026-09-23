@@ -43,6 +43,9 @@ Use the current page content as the source of truth for MahjongKit. American Mah
 - [Play American Mahjong Online](https://mahjongkit.com/community/play-american-mahjong-online/): Online-play options and considerations.
 
 ## Play
+- [Tile Match](https://mahjongkit.com/play/tile-match/): Practice game for learning the real American Mahjong tiles.
+- [Dragon Match](https://mahjongkit.com/play/dragon-match/): Practice game pairing each Dragon with its suit.
+- [Number Match](https://mahjongkit.com/play/number-match/): Practice game: same number, different suit.
 - [Flower Match](https://mahjongkit.com/play/flower-match/): A relaxing Mahjong-inspired matching game; it is not American Mah Jongg itself.
 
 ## About and policies

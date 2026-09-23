@@ -2,6 +2,59 @@
    keywords = extra words people might type. URLs are site-root paths; search.js makes them relative. */
 var SEARCH_INDEX = [
   {
+    "title": "Number Match",
+    "url": "/play/number-match/",
+    "category": "Play",
+    "description": "A calm practice game: find the two tiles with the same number in different suits. The idea that makes the card readable.",
+    "keywords": [
+      "number match",
+      "same number",
+      "different suit",
+      "like numbers",
+      "suits",
+      "colors",
+      "card",
+      "game",
+      "practice"
+    ]
+  },
+  {
+    "title": "Dragon Match",
+    "url": "/play/dragon-match/",
+    "category": "Play",
+    "description": "A calm practice game: pair each Dragon with its suit. Red with Craks, Green with Bams, Soap with Dots.",
+    "keywords": [
+      "dragon match",
+      "dragons",
+      "matching dragons",
+      "which dragon goes with",
+      "red dragon",
+      "green dragon",
+      "soap",
+      "white dragon",
+      "game",
+      "practice"
+    ]
+  },
+  {
+    "title": "Tile Match",
+    "url": "/play/tile-match/",
+    "category": "Play",
+    "description": "A calm practice game: find the matching pair of real American Mahjong tiles, and learn their names as you go.",
+    "keywords": [
+      "tile match",
+      "tiles game",
+      "learn tiles",
+      "practice",
+      "game",
+      "play",
+      "recognize tiles",
+      "craks",
+      "bams",
+      "dots"
+    ]
+  },
+  {
     "title": "Teach American Mahjong",
     "url": "/teach/",
     "category": "Teach",

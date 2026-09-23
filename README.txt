@@ -129,6 +129,11 @@ actual crawler-access control file.
   strategy/mahjong-defense/             Defense and the endgame
   assets/images/mahjong-wall-diagram.svg  Wall diagram used on rules/table-setup/
   play/flower-match/         Flower Match. Every "Play" link goes here.
+  play/tile-match/           Tile Match: practice game with real tile faces
+  play/dragon-match/         Dragon Match: pair each Dragon with its suit
+  play/number-match/         Number Match: same number, different suit (9 or 16 tiles)
+                             (assets/js/tile-match.js, generated from the
+                             Flower Match engine plus the printables' tile art)
   play/index.html            Redirect only: sends old /play/ links to
                              Flower Match (not in the sitemap).
                              Real online Mahjong platforms, with links,
